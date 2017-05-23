@@ -1,0 +1,10 @@
+c:\users\lasitha\documents\visual studio 2010\Projects\sossupdate\sossupdate\bin\Debug\sossupdate.exe
+c:\users\lasitha\documents\visual studio 2010\Projects\sossupdate\sossupdate\bin\Debug\sossupdate.pdb
+c:\users\lasitha\documents\visual studio 2010\Projects\sossupdate\sossupdate\obj\x86\Debug\sossupdate.Properties.Resources.resources
+c:\users\lasitha\documents\visual studio 2010\Projects\sossupdate\sossupdate\obj\x86\Debug\sossupdate.csproj.GenerateResource.Cache
+c:\users\lasitha\documents\visual studio 2010\Projects\sossupdate\sossupdate\obj\x86\Debug\sossupdate.exe
+c:\users\lasitha\documents\visual studio 2010\Projects\sossupdate\sossupdate\obj\x86\Debug\sossupdate.pdb
+c:\users\lasitha\documents\visual studio 2010\Projects\sossupdate\sossupdate\bin\Debug\ONLINEDB.mdb
+c:\users\lasitha\documents\visual studio 2010\Projects\sossupdate\sossupdate\bin\Debug\sossupdate.exe.config
+c:\users\lasitha\documents\visual studio 2010\Projects\sossupdate\sossupdate\obj\x86\Debug\sossupdate.Form1.resources
+C:\Users\Lasitha\Documents\Visual Studio 2010\Projects\sossupdate\sossupdate\obj\x86\Debug\sossupdate.csprojResolveAssemblyReference.cache

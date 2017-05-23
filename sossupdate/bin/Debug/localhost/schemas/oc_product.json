@@ -1,0 +1,20 @@
+{
+	"fields": [{
+			"fieldName": "product_id",
+			"dataType": "int",
+			"annotations": {
+				"isPrimary": true,
+				"autoIncrement": true
+			}
+		},
+		{
+			"fieldName": "model",
+			"dataType": "java.lang.String"
+		},
+		{
+			"fieldName": "quantity",
+			"dataType": "int"
+		}
+
+	]
+}

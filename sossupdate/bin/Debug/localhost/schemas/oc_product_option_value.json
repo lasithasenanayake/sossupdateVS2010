@@ -1,0 +1,33 @@
+{
+	"fields": [{
+			"fieldName": "product_option_value_id",
+			"dataType": "int",
+			"annotations": {
+				"isPrimary": true,
+				"autoIncrement": true
+			}
+		},
+		{
+			"fieldName": "product_option_id",
+			"dataType": "int"
+		},
+		{
+			"fieldName": "product_id",
+			"dataType": "int"
+		},
+		{
+			"fieldName": "option_id",
+			"dataType": "int"
+		},
+		{
+			"fieldName": "option_value_id",
+			"dataType": "int"
+		},
+		{
+			"fieldName": "quantity",
+			"dataType": "int"
+		}
+
+
+	]
+}

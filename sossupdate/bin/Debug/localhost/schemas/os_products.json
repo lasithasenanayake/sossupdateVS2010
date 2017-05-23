@@ -1,0 +1,128 @@
+{
+	"fields": [{
+			"fieldName": "product_id",
+			"dataType": "int",
+			"annotations": {
+				"isPrimary": true,
+				"autoIncrement": true
+			}
+		},
+		{
+			"fieldName": "model",
+			"dataType": "java.lang.String"
+		},
+		{
+			"fieldName": "sku",
+			"dataType": "java.lang.String"
+		},
+		{
+			"fieldName": "upc",
+			"dataType": "java.lang.String"
+		},
+		{
+			"fieldName": "ean",
+			"dataType": "java.lang.String"
+		},
+		{
+			"fieldName": "jan",
+			"dataType": "java.lang.String"
+		},
+		{
+			"fieldName": "isbn",
+			"dataType": "java.lang.String"
+		},
+		{
+			"fieldName": "mpn",
+			"dataType": "java.lang.String"
+		},
+		{
+			"fieldName": "location",
+			"dataType": "java.lang.String"
+		},
+		{
+			"fieldName": "quantity",
+			"dataType": "int"
+		},
+		{
+			"fieldName": "stock_status_id",
+			"dataType": "int"
+		},
+		{
+			"fieldName": "image",
+			"dataType": "java.lang.String"
+		},
+		{
+			"fieldName": "manufacturer_id",
+			"dataType": "int"
+		},
+		{
+			"fieldName": "shipping",
+			"dataType": "int"
+		},
+		{
+			"fieldName": "price",
+			"dataType": "double"
+		},
+		{
+			"fieldName": "points",
+			"dataType": "int"
+		},
+		{
+			"fieldName": "tax_class_id",
+			"dataType": "int"
+		},
+		{
+			"fieldName": "date_available",
+			"dataType": "java.util.Date"
+		},
+		{
+			"fieldName": "weight",
+			"dataType": "double"
+		},
+		{
+			"fieldName": "weight_class_id",
+			"dataType": "int"
+		},
+		{
+			"fieldName": "length",
+			"dataType": "double"
+		},
+		{
+			"fieldName": "height",
+			"dataType": "double"
+		},
+		{
+			"fieldName": "legth_class_id",
+			"dataType": "int"
+		},
+		{
+			"fieldName": "subtract",
+			"dataType": "int"
+		},
+		{
+			"fieldName": "minimum",
+			"dataType": "int"
+		},
+		{
+			"fieldName": "sort_order",
+			"dataType": "int"
+		},
+		{
+			"fieldName": "status",
+			"dataType": "int"
+		},
+		{
+			"fieldName": "viewed",
+			"dataType": "int"
+		},
+		{
+			"fieldName": "date_added",
+			"dataType": "java.util.Date"
+		},
+		{
+			"fieldName": "date_modified",
+			"dataType": "java.util.Date"
+		}
+
+	]
+}
