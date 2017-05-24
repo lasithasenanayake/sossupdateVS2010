@@ -6,8 +6,6 @@
     <QTYINHAND>6</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <ProductID>12</ProductID>
-    <OptionID>12</OptionID>
   </ITEM>
   <ITEM>
     <M5ITCD>LS2611</M5ITCD>
@@ -15,8 +13,6 @@
     <QTYINHAND>11</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <ProductID>12</ProductID>
-    <OptionID>12</OptionID>
   </ITEM>
   <ITEM>
     <M5ITCD>AD80</M5ITCD>
@@ -24,8 +20,6 @@
     <QTYINHAND>7</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>388</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>AD81</M5ITCD>
@@ -33,7 +27,6 @@
     <QTYINHAND>12</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <ProductID>34</ProductID>
   </ITEM>
   <ITEM>
     <M5ITCD>AD82</M5ITCD>
@@ -132,8 +125,6 @@
     <QTYINHAND>10</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>398</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>NA812</M5ITCD>
@@ -211,8 +202,6 @@
     <QTYINHAND>16</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>323</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7786</M5ITCD>
@@ -262,8 +251,6 @@
     <QTYINHAND>3</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>324</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7793</M5ITCD>
@@ -390,8 +377,6 @@
     <QTYINHAND>1</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>315</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1539</M5ITCD>
@@ -427,8 +412,6 @@
     <QTYINHAND>2</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>345</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>AD18</M5ITCD>
@@ -443,8 +426,6 @@
     <QTYINHAND>2</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>346</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7798</M5ITCD>
@@ -452,8 +433,6 @@
     <QTYINHAND>26</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>404</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7799</M5ITCD>
@@ -80939,8 +80918,6 @@
     <QTYINHAND>6</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>256</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>LS1850</M5ITCD>
@@ -82659,8 +82636,6 @@
     <MZIZE>XS</MZIZE>
     <QTYINHAND>1</QTYINHAND>
     <Updated>0</Updated>
-    <responce>331</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MS694</M5ITCD>
@@ -83109,8 +83084,6 @@
     <MZIZE>XS</MZIZE>
     <QTYINHAND>0.0000</QTYINHAND>
     <Updated>0</Updated>
-    <responce>337</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB6408</M5ITCD>
@@ -83147,8 +83120,6 @@
     <MZIZE>XS</MZIZE>
     <QTYINHAND>1</QTYINHAND>
     <Updated>0</Updated>
-    <responce>338</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB6414</M5ITCD>
@@ -85609,8 +85580,6 @@
     <MZIZE>XS</MZIZE>
     <QTYINHAND>8</QTYINHAND>
     <Updated>0</Updated>
-    <responce>342</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MS859</M5ITCD>
@@ -87362,8 +87331,6 @@
     <QTYINHAND>10</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>332</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>LS2051</M5ITCD>
@@ -87412,8 +87379,6 @@
     <QTYINHAND>4</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>335</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>LS2058</M5ITCD>
@@ -87583,8 +87548,6 @@
     <QTYINHAND>1</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>336</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>LS2063</M5ITCD>
@@ -88381,8 +88344,6 @@
     <QTYINHAND>4</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>340</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB6561</M5ITCD>
@@ -88454,8 +88415,6 @@
     <QTYINHAND>7</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>329</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>LS2074</M5ITCD>
@@ -88520,8 +88479,6 @@
     <QTYINHAND>11</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>246</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>LS2084</M5ITCD>
@@ -88991,8 +88948,6 @@
     <MZIZE>XS</MZIZE>
     <QTYINHAND>10</QTYINHAND>
     <Updated>0</Updated>
-    <responce>245</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MS935</M5ITCD>
@@ -90832,8 +90787,6 @@
     <QTYINHAND>6</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>326</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>NA541</M5ITCD>
@@ -91587,8 +91540,6 @@
     <QTYINHAND>10</QTYINHAND>
     <LUUPDATEWEB>27/11/2016</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>343</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB6828</M5ITCD>
@@ -92170,8 +92121,6 @@
     <MZIZE>XS</MZIZE>
     <QTYINHAND>5</QTYINHAND>
     <Updated>0</Updated>
-    <responce>339</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB6857</M5ITCD>
@@ -92253,8 +92202,6 @@
     <QTYINHAND>4</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>334</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB6870</M5ITCD>
@@ -93638,8 +93585,6 @@
     <QTYINHAND>1</QTYINHAND>
     <LUUPDATEWEB>27/11/2016</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>272</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1227</M5ITCD>
@@ -93812,8 +93757,6 @@
     <QTYINHAND>2</QTYINHAND>
     <LUUPDATEWEB>27/11/2016</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>330</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1219</M5ITCD>
@@ -95526,8 +95469,6 @@
     <QTYINHAND>5</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>333</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>NA592</M5ITCD>
@@ -96336,8 +96277,6 @@
     <QTYINHAND>0.0000</QTYINHAND>
     <LUUPDATEWEB>27/11/2016</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>247</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1193</M5ITCD>
@@ -97102,8 +97041,6 @@
     <MZIZE>XS</MZIZE>
     <QTYINHAND>3</QTYINHAND>
     <Updated>0</Updated>
-    <responce>204</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7527</M5ITCD>
@@ -97150,8 +97087,6 @@
     <QTYINHAND>3</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>286</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>NA732</M5ITCD>
@@ -97188,8 +97123,6 @@
     <MZIZE>XS</MZIZE>
     <QTYINHAND>0.0000</QTYINHAND>
     <Updated>0</Updated>
-    <responce>255</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>NA738</M5ITCD>
@@ -97231,8 +97164,6 @@
     <QTYINHAND>5</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>367</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>LS2455</M5ITCD>
@@ -97429,8 +97360,6 @@
     <QTYINHAND>3</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>221</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7630</M5ITCD>
@@ -97484,8 +97413,6 @@
     <QTYINHAND>9</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>352</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MM2</M5ITCD>
@@ -98711,8 +98638,6 @@
     <QTYINHAND>2</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>325</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>LS2371</M5ITCD>
@@ -98930,8 +98855,6 @@
     <QTYINHAND>4</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>344</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7255</M5ITCD>
@@ -99307,8 +99230,6 @@
     <QTYINHAND>11</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>252</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7368</M5ITCD>
@@ -100503,8 +100424,6 @@
     <QTYINHAND>9</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>341</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1339</M5ITCD>
@@ -101186,8 +101105,6 @@
     <MZIZE>XS</MZIZE>
     <QTYINHAND>1</QTYINHAND>
     <Updated>0</Updated>
-    <responce>217</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>LS2436</M5ITCD>
@@ -101234,8 +101151,6 @@
     <QTYINHAND>12</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>211</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>KL99</M5ITCD>
@@ -101264,8 +101179,6 @@
     <QTYINHAND>11</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>210</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>KL103</M5ITCD>
@@ -101467,8 +101380,6 @@
     <QTYINHAND>11</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>218</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7441</M5ITCD>
@@ -101574,8 +101485,6 @@
     <QTYINHAND>3</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>212</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7457</M5ITCD>
@@ -101610,8 +101519,6 @@
     <QTYINHAND>15</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>213</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7462</M5ITCD>
@@ -101645,8 +101552,6 @@
     <MZIZE>XS</MZIZE>
     <QTYINHAND>2</QTYINHAND>
     <Updated>0</Updated>
-    <responce>215</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1377</M5ITCD>
@@ -101682,8 +101587,6 @@
     <QTYINHAND>0.0000</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>207</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7467</M5ITCD>
@@ -101725,8 +101628,6 @@
     <QTYINHAND>4</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>214</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7473</M5ITCD>
@@ -101767,8 +101668,6 @@
     <MZIZE>XS</MZIZE>
     <QTYINHAND>4</QTYINHAND>
     <Updated>0</Updated>
-    <responce>209</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7479</M5ITCD>
@@ -101957,8 +101856,6 @@
     <QTYINHAND>5</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>234</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7534</M5ITCD>
@@ -101990,8 +101887,6 @@
     <MZIZE>XXS</MZIZE>
     <QTYINHAND>2</QTYINHAND>
     <Updated>0</Updated>
-    <responce>203</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7539</M5ITCD>
@@ -102033,8 +101928,6 @@
     <QTYINHAND>2</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>273</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1382</M5ITCD>
@@ -102069,8 +101962,6 @@
     <QTYINHAND>0.0000</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>300</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7583</M5ITCD>
@@ -102113,8 +102004,6 @@
     <QTYINHAND>1</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>224</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>IN469</M5ITCD>
@@ -102294,8 +102183,6 @@
     <QTYINHAND>10</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>205</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1388</M5ITCD>
@@ -102343,8 +102230,6 @@
     <QTYINHAND>4</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>295</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7492</M5ITCD>
@@ -102377,8 +102262,6 @@
     <MZIZE>XS</MZIZE>
     <QTYINHAND>2</QTYINHAND>
     <Updated>0</Updated>
-    <responce>202</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7497</M5ITCD>
@@ -102420,8 +102303,6 @@
     <MZIZE>XS</MZIZE>
     <QTYINHAND>0.0000</QTYINHAND>
     <Updated>0</Updated>
-    <responce>232</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7503</M5ITCD>
@@ -102459,8 +102340,6 @@
     <MZIZE>28</MZIZE>
     <QTYINHAND>1</QTYINHAND>
     <Updated>0</Updated>
-    <responce>296</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7509</M5ITCD>
@@ -102500,8 +102379,6 @@
     <MZIZE>XS</MZIZE>
     <QTYINHAND>2</QTYINHAND>
     <Updated>0</Updated>
-    <responce>285</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>NA726</M5ITCD>
@@ -102538,8 +102415,6 @@
     <MZIZE>XS</MZIZE>
     <QTYINHAND>0.0000</QTYINHAND>
     <Updated>0</Updated>
-    <responce>235</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7515</M5ITCD>
@@ -102778,8 +102653,6 @@
     <MZIZE>XS</MZIZE>
     <QTYINHAND>1</QTYINHAND>
     <Updated>0</Updated>
-    <responce>206</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>LS2443</M5ITCD>
@@ -102890,8 +102763,6 @@
     <QTYINHAND>6</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>274</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1395</M5ITCD>
@@ -102926,8 +102797,6 @@
     <MZIZE>XS</MZIZE>
     <QTYINHAND>1</QTYINHAND>
     <Updated>0</Updated>
-    <responce>275</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1400</M5ITCD>
@@ -102971,8 +102840,6 @@
     <MZIZE>28</MZIZE>
     <QTYINHAND>2</QTYINHAND>
     <Updated>0</Updated>
-    <responce>267</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>LS2461</M5ITCD>
@@ -103014,8 +102881,6 @@
     <QTYINHAND>1</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>233</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>AA388</M5ITCD>
@@ -103049,8 +102914,6 @@
     <QTYINHAND>5</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>409</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7545</M5ITCD>
@@ -103093,8 +102956,6 @@
     <QTYINHAND>4</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>410</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7551</M5ITCD>
@@ -103137,8 +102998,6 @@
     <QTYINHAND>4</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>411</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7557</M5ITCD>
@@ -103181,8 +103040,6 @@
     <QTYINHAND>2</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>298</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7563</M5ITCD>
@@ -103224,8 +103081,6 @@
     <MZIZE>XS</MZIZE>
     <QTYINHAND>2</QTYINHAND>
     <Updated>0</Updated>
-    <responce>231</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7569</M5ITCD>
@@ -103270,8 +103125,6 @@
     <QTYINHAND>0.0000</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>299</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7576</M5ITCD>
@@ -103316,8 +103169,6 @@
     <MZIZE>XS</MZIZE>
     <QTYINHAND>11</QTYINHAND>
     <Updated>0</Updated>
-    <responce>200</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1405</M5ITCD>
@@ -103360,8 +103211,8 @@
     <QTYINHAND>0.0000</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>276</responce>
-    <QtyOnWeb>0</QtyOnWeb>
+    <ProductID>276</ProductID>
+    <OptionID>94</OptionID>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1411</M5ITCD>
@@ -103403,8 +103254,6 @@
     <QTYINHAND>7</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>199</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1417</M5ITCD>
@@ -103458,8 +103307,6 @@
     <QTYINHAND>3</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>268</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>LS2467</M5ITCD>
@@ -103501,8 +103348,6 @@
     <MZIZE>XS  6</MZIZE>
     <QTYINHAND>2</QTYINHAND>
     <Updated>0</Updated>
-    <responce>257</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>AA393</M5ITCD>
@@ -103642,8 +103487,6 @@
     <QTYINHAND>8</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>223</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7602</M5ITCD>
@@ -103753,8 +103596,6 @@
     <QTYINHAND>1</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>269</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>LS2484</M5ITCD>
@@ -103797,8 +103638,6 @@
     <QTYINHAND>0.0000</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>228</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>LS2490</M5ITCD>
@@ -103839,8 +103678,6 @@
     <MZIZE>XS</MZIZE>
     <QTYINHAND>1</QTYINHAND>
     <Updated>0</Updated>
-    <responce>229</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>LS2496</M5ITCD>
@@ -103879,8 +103716,6 @@
     <MZIZE>28</MZIZE>
     <QTYINHAND>0.0000</QTYINHAND>
     <Updated>0</Updated>
-    <responce>227</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1429</M5ITCD>
@@ -103918,8 +103753,6 @@
     <MZIZE>XS</MZIZE>
     <QTYINHAND>22</QTYINHAND>
     <Updated>0</Updated>
-    <responce>407</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1433</M5ITCD>
@@ -103946,8 +103779,6 @@
     <QTYINHAND>5</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>287</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>NA746</M5ITCD>
@@ -103982,8 +103813,6 @@
     <MZIZE>XS</MZIZE>
     <QTYINHAND>7</QTYINHAND>
     <Updated>0</Updated>
-    <responce>222</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7608</M5ITCD>
@@ -104136,8 +103965,6 @@
     <QTYINHAND>2</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>366</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1461</M5ITCD>
@@ -104272,8 +104099,6 @@
     <QTYINHAND>5</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>262</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>CA1132</M5ITCD>
@@ -104295,8 +104120,6 @@
     <QTYINHAND>8</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>263</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>CA1135</M5ITCD>
@@ -104325,8 +104148,6 @@
     <QTYINHAND>2</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>277</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1439</M5ITCD>
@@ -104382,8 +104203,6 @@
     <QTYINHAND>14</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>350</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>KL107</M5ITCD>
@@ -104405,8 +104224,6 @@
     <QTYINHAND>20</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>389</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>KL111</M5ITCD>
@@ -104421,8 +104238,6 @@
     <QTYINHAND>10</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>278</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1445</M5ITCD>
@@ -104451,8 +104266,6 @@
     <QTYINHAND>9</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>301</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7638</M5ITCD>
@@ -104572,8 +104385,6 @@
     <QTYINHAND>16</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>418</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>KL127</M5ITCD>
@@ -104601,8 +104412,6 @@
     <MZIZE>28</MZIZE>
     <QTYINHAND>0.0000</QTYINHAND>
     <Updated>0</Updated>
-    <responce>441</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>KL131</M5ITCD>
@@ -104709,8 +104518,6 @@
     <QTYINHAND>9</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>270</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>LS2508</M5ITCD>
@@ -104746,8 +104553,6 @@
     <QTYINHAND>3</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>279</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1449</M5ITCD>
@@ -104789,8 +104594,6 @@
     <QTYINHAND>2</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>280</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1455</M5ITCD>
@@ -104832,8 +104635,6 @@
     <QTYINHAND>12</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>288</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>NA755</M5ITCD>
@@ -104867,8 +104668,6 @@
     <QTYINHAND>0.0000</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>289</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>NA761</M5ITCD>
@@ -104942,8 +104741,6 @@
     <QTYINHAND>4</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>290</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>NA773</M5ITCD>
@@ -105032,8 +104829,6 @@
     <QTYINHAND>0.0000</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>419</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>LS2536</M5ITCD>
@@ -105047,8 +104842,6 @@
     <MZIZE>XS</MZIZE>
     <QTYINHAND>0.0000</QTYINHAND>
     <Updated>0</Updated>
-    <responce>478</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>LS2548</M5ITCD>
@@ -105121,8 +104914,6 @@
     <QTYINHAND>3</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>302</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7651</M5ITCD>
@@ -105165,8 +104956,6 @@
     <QTYINHAND>6</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>304</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7657</M5ITCD>
@@ -105209,8 +104998,6 @@
     <QTYINHAND>5</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>305</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7663</M5ITCD>
@@ -105253,8 +105040,6 @@
     <QTYINHAND>3</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>306</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7669</M5ITCD>
@@ -105304,8 +105089,6 @@
     <QTYINHAND>3</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>292</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>NA779</M5ITCD>
@@ -105348,8 +105131,6 @@
     <QTYINHAND>6</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>282</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1485</M5ITCD>
@@ -105392,8 +105173,6 @@
     <QTYINHAND>3</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>283</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1491</M5ITCD>
@@ -105436,8 +105215,6 @@
     <QTYINHAND>5</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>307</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7676</M5ITCD>
@@ -105480,8 +105257,6 @@
     <QTYINHAND>8</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>412</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7682</M5ITCD>
@@ -105524,8 +105299,6 @@
     <QTYINHAND>24</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>293</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>NA785</M5ITCD>
@@ -105547,8 +105320,6 @@
     <QTYINHAND>13</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>266</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>KL141</M5ITCD>
@@ -105577,8 +105348,6 @@
     <QTYINHAND>15</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>265</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>KL145</M5ITCD>
@@ -105607,8 +105376,6 @@
     <QTYINHAND>2</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>308</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7689</M5ITCD>
@@ -105679,8 +105446,6 @@
     <QTYINHAND>1</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>309</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7700</M5ITCD>
@@ -105723,8 +105488,6 @@
     <QTYINHAND>11</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>317</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7706</M5ITCD>
@@ -105760,8 +105523,6 @@
     <QTYINHAND>2</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>310</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7712</M5ITCD>
@@ -105867,8 +105628,6 @@
     <QTYINHAND>3</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>271</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>LS2560</M5ITCD>
@@ -105952,8 +105711,6 @@
     <MZIZE>XS</MZIZE>
     <QTYINHAND>0.0000</QTYINHAND>
     <Updated>0</Updated>
-    <responce>362</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>LS2572</M5ITCD>
@@ -105996,8 +105753,6 @@
     <QTYINHAND>1</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>318</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7718</M5ITCD>
@@ -106040,8 +105795,6 @@
     <QTYINHAND>3</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>311</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7724</M5ITCD>
@@ -106084,8 +105837,6 @@
     <QTYINHAND>1</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>319</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7730</M5ITCD>
@@ -106128,8 +105879,6 @@
     <QTYINHAND>3</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>258</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>AA401</M5ITCD>
@@ -106144,8 +105893,6 @@
     <QTYINHAND>1</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>259</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>AA403</M5ITCD>
@@ -106174,8 +105921,6 @@
     <QTYINHAND>2</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>260</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>AA407</M5ITCD>
@@ -106211,8 +105956,6 @@
     <QTYINHAND>4</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>294</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>NA791</M5ITCD>
@@ -106311,8 +106054,6 @@
     <QTYINHAND>13</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>284</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1500</M5ITCD>
@@ -106341,8 +106082,6 @@
     <QTYINHAND>0.0000</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>312</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7736</M5ITCD>
@@ -106385,8 +106124,6 @@
     <QTYINHAND>0.0000</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>313</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7742</M5ITCD>
@@ -106471,8 +106208,6 @@
     <QTYINHAND>6</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>355</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1510</M5ITCD>
@@ -106515,8 +106250,6 @@
     <QTYINHAND>9</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>390</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1516</M5ITCD>
@@ -106559,8 +106292,6 @@
     <QTYINHAND>12</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>351</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>LS2578</M5ITCD>
@@ -106603,8 +106334,6 @@
     <QTYINHAND>5</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>371</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>LS2584</M5ITCD>
@@ -106647,8 +106376,6 @@
     <QTYINHAND>6</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>354</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>LS2590</M5ITCD>
@@ -106691,8 +106418,6 @@
     <QTYINHAND>1</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>320</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7748</M5ITCD>
@@ -106735,8 +106460,6 @@
     <QTYINHAND>3</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>321</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7754</M5ITCD>
@@ -106779,8 +106502,6 @@
     <QTYINHAND>10</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>314</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1522</M5ITCD>
@@ -106816,8 +106537,6 @@
     <QTYINHAND>8</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>393</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7760</M5ITCD>
@@ -106914,8 +106633,6 @@
     <QTYINHAND>2</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>363</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>AD9</M5ITCD>
@@ -107084,8 +106801,6 @@
     <QTYINHAND>2</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>476</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MM23</M5ITCD>
@@ -107135,8 +106850,6 @@
     <QTYINHAND>11</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>406</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MM30</M5ITCD>
@@ -107179,8 +106892,6 @@
     <QTYINHAND>17</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>444</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MM36</M5ITCD>
@@ -107223,8 +106934,6 @@
     <QTYINHAND>2</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>375</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7767</M5ITCD>
@@ -107316,8 +107025,6 @@
     <QTYINHAND>12</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>498</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7773</M5ITCD>
@@ -107374,8 +107081,6 @@
     <QTYINHAND>27</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>322</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7779</M5ITCD>
@@ -107425,8 +107130,6 @@
     <QTYINHAND>22</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>358</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7805</M5ITCD>
@@ -107469,8 +107172,6 @@
     <QTYINHAND>3</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>368</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>AD21</M5ITCD>
@@ -107513,8 +107214,6 @@
     <QTYINHAND>16</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>420</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>AD27</M5ITCD>
@@ -107557,8 +107256,6 @@
     <QTYINHAND>5</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>361</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>AD33</M5ITCD>
@@ -107685,8 +107382,6 @@
     <QTYINHAND>1</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>360</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7811</M5ITCD>
@@ -107785,8 +107480,6 @@
     <QTYINHAND>3</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>359</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7825</M5ITCD>
@@ -107878,8 +107571,6 @@
     <QTYINHAND>1</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>391</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1543</M5ITCD>
@@ -107922,8 +107613,6 @@
     <QTYINHAND>4</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>357</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1549</M5ITCD>
@@ -108050,8 +107739,6 @@
     <QTYINHAND>4</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>349</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7832</M5ITCD>
@@ -108101,8 +107788,6 @@
     <QTYINHAND>1</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>377</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7839</M5ITCD>
@@ -108152,8 +107837,6 @@
     <QTYINHAND>4</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>347</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>AD39</M5ITCD>
@@ -108182,8 +107865,6 @@
     <QTYINHAND>5</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>348</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>AD43</M5ITCD>
@@ -108212,8 +107893,6 @@
     <QTYINHAND>6</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>356</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1567</M5ITCD>
@@ -108263,8 +107942,6 @@
     <QTYINHAND>6</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>378</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7846</M5ITCD>
@@ -108292,8 +107969,6 @@
     <MZIZE>XS</MZIZE>
     <QTYINHAND>9</QTYINHAND>
     <Updated>0</Updated>
-    <responce>445</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7850</M5ITCD>
@@ -108331,8 +108006,6 @@
     <QTYINHAND>9</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>408</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1574</M5ITCD>
@@ -108382,8 +108055,6 @@
     <QTYINHAND>0.0000</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>373</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1581</M5ITCD>
@@ -108433,8 +108104,6 @@
     <QTYINHAND>1</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>374</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1588</M5ITCD>
@@ -108477,8 +108146,6 @@
     <QTYINHAND>1</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>380</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7856</M5ITCD>
@@ -108521,8 +108188,6 @@
     <QTYINHAND>2</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>376</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7862</M5ITCD>
@@ -108565,8 +108230,6 @@
     <QTYINHAND>1</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>379</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7868</M5ITCD>
@@ -108609,8 +108272,6 @@
     <QTYINHAND>5</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>369</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>AD47</M5ITCD>
@@ -108653,8 +108314,6 @@
     <QTYINHAND>7</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>370</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>AD59</M5ITCD>
@@ -108690,8 +108349,6 @@
     <QTYINHAND>22</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>385</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>AD64</M5ITCD>
@@ -108727,8 +108384,6 @@
     <QTYINHAND>8</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>386</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>AD69</M5ITCD>
@@ -108757,8 +108412,6 @@
     <QTYINHAND>0.0000</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>427</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7890</M5ITCD>
@@ -108857,8 +108510,6 @@
     <QTYINHAND>13</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>396</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7896</M5ITCD>
@@ -108894,8 +108545,6 @@
     <QTYINHAND>4</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>394</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7874</M5ITCD>
@@ -108938,8 +108587,6 @@
     <QTYINHAND>4</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>381</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7880</M5ITCD>
@@ -108982,8 +108629,6 @@
     <QTYINHAND>18</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>401</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>AA425</M5ITCD>
@@ -109379,8 +109024,6 @@
     <QTYINHAND>5</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>413</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7902</M5ITCD>
@@ -109430,8 +109073,6 @@
     <QTYINHAND>6</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>387</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>AD73</M5ITCD>
@@ -109486,8 +109127,6 @@
     <QTYINHAND>8</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>397</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>AA452</M5ITCD>
@@ -109590,8 +109229,6 @@
     <QTYINHAND>6</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>446</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>AA460</M5ITCD>
@@ -109879,8 +109516,6 @@
     <QTYINHAND>2</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>392</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1594</M5ITCD>
@@ -109923,8 +109558,6 @@
     <QTYINHAND>15</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>395</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7886</M5ITCD>
@@ -110025,8 +109658,6 @@
     <QTYINHAND>12</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>384</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>AD58</M5ITCD>
@@ -110041,8 +109672,6 @@
     <QTYINHAND>12</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>433</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>LS2607</M5ITCD>
@@ -110099,8 +109728,6 @@
     <QTYINHAND>24</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>399</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>LS2619</M5ITCD>
@@ -110122,8 +109749,6 @@
     <QTYINHAND>9</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>402</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>LS2622</M5ITCD>
@@ -110145,8 +109770,6 @@
     <QTYINHAND>16</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>403</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>LS2625</M5ITCD>
@@ -110168,8 +109791,6 @@
     <QTYINHAND>3</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>544</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>LS2628</M5ITCD>
@@ -110191,8 +109812,6 @@
     <QTYINHAND>23</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>415</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7956</M5ITCD>
@@ -110256,8 +109875,6 @@
     <QTYINHAND>8</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>447</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7936</M5ITCD>
@@ -110300,8 +109917,6 @@
     <QTYINHAND>0.0000</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>428</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7942</M5ITCD>
@@ -110344,8 +109959,6 @@
     <QTYINHAND>14</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>414</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7948</M5ITCD>
@@ -110414,8 +110027,6 @@
     <QTYINHAND>9</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>416</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1604</M5ITCD>
@@ -110472,8 +110083,6 @@
     <QTYINHAND>3</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>429</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7968</M5ITCD>
@@ -110722,8 +110331,6 @@
     <QTYINHAND>1</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>421</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1608</M5ITCD>
@@ -110745,8 +110352,6 @@
     <QTYINHAND>0.0000</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>430</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7982</M5ITCD>
@@ -110796,8 +110401,6 @@
     <QTYINHAND>0.0000</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>431</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7989</M5ITCD>
@@ -110846,8 +110449,6 @@
     <MZIZE>S</MZIZE>
     <QTYINHAND>0.0000</QTYINHAND>
     <Updated>0</Updated>
-    <responce>422</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1611</M5ITCD>
@@ -110872,8 +110473,6 @@
     <MZIZE>S</MZIZE>
     <QTYINHAND>0.0000</QTYINHAND>
     <Updated>0</Updated>
-    <responce>423</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1615</M5ITCD>
@@ -110922,8 +110521,6 @@
     <MZIZE>XXS</MZIZE>
     <QTYINHAND>0.0000</QTYINHAND>
     <Updated>0</Updated>
-    <responce>432</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB7996</M5ITCD>
@@ -110966,8 +110563,6 @@
     <MZIZE>XS</MZIZE>
     <QTYINHAND>0.0000</QTYINHAND>
     <Updated>0</Updated>
-    <responce>460</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1627</M5ITCD>
@@ -111077,8 +110672,6 @@
     <QTYINHAND>0.0000</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>426</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>NA818</M5ITCD>
@@ -111121,8 +110714,6 @@
     <QTYINHAND>1</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>425</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1645</M5ITCD>
@@ -111214,8 +110805,6 @@
     <QTYINHAND>12</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <responce>448</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>TB8003</M5ITCD>
@@ -111369,8 +110958,6 @@
     <MZIZE>S</MZIZE>
     <QTYINHAND>0.0000</QTYINHAND>
     <Updated>0</Updated>
-    <responce>473</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>NA824</M5ITCD>
@@ -111395,8 +110982,6 @@
     <MZIZE>S</MZIZE>
     <QTYINHAND>0.0000</QTYINHAND>
     <Updated>0</Updated>
-    <responce>485</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>NA828</M5ITCD>
@@ -111433,8 +111018,6 @@
     <MZIZE>XS</MZIZE>
     <QTYINHAND>0.0000</QTYINHAND>
     <Updated>0</Updated>
-    <responce>536</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MM42</M5ITCD>
@@ -111477,8 +111060,6 @@
     <MZIZE>XS</MZIZE>
     <QTYINHAND>0.0000</QTYINHAND>
     <Updated>0</Updated>
-    <responce>499</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MM49</M5ITCD>
@@ -111515,8 +111096,6 @@
     <MZIZE>XS</MZIZE>
     <QTYINHAND>0.0000</QTYINHAND>
     <Updated>0</Updated>
-    <responce>537</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>MM55</M5ITCD>
@@ -111583,8 +111162,6 @@
     <MZIZE>8  S</MZIZE>
     <QTYINHAND>0.0000</QTYINHAND>
     <Updated>0</Updated>
-    <responce>439</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>AA493</M5ITCD>
@@ -111609,8 +111186,6 @@
     <MZIZE>8  S</MZIZE>
     <QTYINHAND>0.0000</QTYINHAND>
     <Updated>0</Updated>
-    <responce>438</responce>
-    <QtyOnWeb>0</QtyOnWeb>
   </ITEM>
   <ITEM>
     <M5ITCD>AA497</M5ITCD>

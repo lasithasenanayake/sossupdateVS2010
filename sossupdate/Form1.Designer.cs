@@ -31,12 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ProductID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.OptionID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.responce = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.QtyOnWeb = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Updated = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MapOnlineProduct = new System.Windows.Forms.DataGridViewButtonColumn();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.iTEMBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.oNLINEDBDataSet = new sossupdate.ONLINEDBDataSet();
@@ -46,9 +40,17 @@
             this.btnsyncstop = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.ProductID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OptionID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.responce = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QtyOnWeb = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Updated = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MapOnlineProduct = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iTEMBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.oNLINEDBDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -68,48 +70,10 @@
             this.MapOnlineProduct});
             this.dataGridView1.Location = new System.Drawing.Point(2, 45);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1096, 413);
+            this.dataGridView1.Size = new System.Drawing.Size(784, 408);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // ProductID
-            // 
-            this.ProductID.DataPropertyName = "ProductID";
-            this.ProductID.HeaderText = "ProductID";
-            this.ProductID.Name = "ProductID";
-            this.ProductID.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // OptionID
-            // 
-            this.OptionID.DataPropertyName = "OptionID";
-            this.OptionID.HeaderText = "OptionID";
-            this.OptionID.Name = "OptionID";
-            this.OptionID.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.OptionID.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // responce
-            // 
-            this.responce.DataPropertyName = "responce";
-            this.responce.HeaderText = "responce";
-            this.responce.Name = "responce";
-            // 
-            // QtyOnWeb
-            // 
-            this.QtyOnWeb.DataPropertyName = "QtyOnWeb";
-            this.QtyOnWeb.HeaderText = "QtyOnWeb";
-            this.QtyOnWeb.Name = "QtyOnWeb";
-            // 
-            // Updated
-            // 
-            this.Updated.DataPropertyName = "Updated";
-            this.Updated.HeaderText = "Updated";
-            this.Updated.Name = "Updated";
-            // 
-            // MapOnlineProduct
-            // 
-            this.MapOnlineProduct.HeaderText = "Map Online Product";
-            this.MapOnlineProduct.Name = "MapOnlineProduct";
             // 
             // timer1
             // 
@@ -133,7 +97,8 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(764, 472);
+            this.btnUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnUpdate.Location = new System.Drawing.Point(784, 472);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(118, 23);
             this.btnUpdate.TabIndex = 1;
@@ -143,7 +108,8 @@
             // 
             // btnsyncstart
             // 
-            this.btnsyncstart.Location = new System.Drawing.Point(888, 473);
+            this.btnsyncstart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnsyncstart.Location = new System.Drawing.Point(908, 473);
             this.btnsyncstart.Name = "btnsyncstart";
             this.btnsyncstart.Size = new System.Drawing.Size(102, 22);
             this.btnsyncstart.TabIndex = 2;
@@ -152,7 +118,8 @@
             // 
             // btnsyncstop
             // 
-            this.btnsyncstop.Location = new System.Drawing.Point(996, 473);
+            this.btnsyncstop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnsyncstop.Location = new System.Drawing.Point(1016, 473);
             this.btnsyncstop.Name = "btnsyncstop";
             this.btnsyncstop.Size = new System.Drawing.Size(102, 22);
             this.btnsyncstop.TabIndex = 3;
@@ -176,11 +143,63 @@
             this.textBox1.Size = new System.Drawing.Size(272, 20);
             this.textBox1.TabIndex = 5;
             // 
+            // dataGridView2
+            // 
+            this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(792, 45);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(325, 407);
+            this.dataGridView2.TabIndex = 6;
+            // 
+            // ProductID
+            // 
+            this.ProductID.DataPropertyName = "ProductID";
+            this.ProductID.HeaderText = "ProductID";
+            this.ProductID.Name = "ProductID";
+            this.ProductID.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // OptionID
+            // 
+            this.OptionID.DataPropertyName = "OptionID";
+            this.OptionID.HeaderText = "OptionID";
+            this.OptionID.Name = "OptionID";
+            this.OptionID.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.OptionID.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // responce
+            // 
+            this.responce.DataPropertyName = "responce";
+            this.responce.HeaderText = "responce";
+            this.responce.Name = "responce";
+            this.responce.ReadOnly = true;
+            // 
+            // QtyOnWeb
+            // 
+            this.QtyOnWeb.DataPropertyName = "QtyOnWeb";
+            this.QtyOnWeb.HeaderText = "QtyOnWeb";
+            this.QtyOnWeb.Name = "QtyOnWeb";
+            this.QtyOnWeb.ReadOnly = true;
+            // 
+            // Updated
+            // 
+            this.Updated.DataPropertyName = "Updated";
+            this.Updated.HeaderText = "Updated";
+            this.Updated.Name = "Updated";
+            this.Updated.ReadOnly = true;
+            // 
+            // MapOnlineProduct
+            // 
+            this.MapOnlineProduct.HeaderText = "Map Online Product";
+            this.MapOnlineProduct.Name = "MapOnlineProduct";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1110, 507);
+            this.ClientSize = new System.Drawing.Size(1130, 509);
+            this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnsyncstop);
@@ -194,6 +213,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iTEMBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.oNLINEDBDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -206,17 +226,18 @@
         private System.Windows.Forms.BindingSource iTEMBindingSource;
         private ONLINEDBDataSetTableAdapters.ITEMTableAdapter iTEMTableAdapter;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnsyncstart;
+        private System.Windows.Forms.Button btnsyncstop;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.DataGridViewTextBoxColumn ProductID;
         private System.Windows.Forms.DataGridViewTextBoxColumn OptionID;
         private System.Windows.Forms.DataGridViewTextBoxColumn responce;
         private System.Windows.Forms.DataGridViewTextBoxColumn QtyOnWeb;
         private System.Windows.Forms.DataGridViewTextBoxColumn Updated;
         private System.Windows.Forms.DataGridViewButtonColumn MapOnlineProduct;
-        private System.Windows.Forms.Button btnUpdate;
-        private System.Windows.Forms.Button btnsyncstart;
-        private System.Windows.Forms.Button btnsyncstop;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

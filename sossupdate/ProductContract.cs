@@ -22,12 +22,13 @@ namespace sossupdate
 
     public class ProductOptionValueContract
     {
-        public int product_option_value_id { get; set; }
-        public int product_option_id { get; set; }
         public int product_id { get; set; }
-        public int option_id { get; set; }
         public int option_value_id { get; set; }
-        public int quantity { get; set; }
-
+        public int optqty { get; set; }
+        public int product_option_id { get; set; }
+        public int option_id { get; set; }
+        public int stockqty { get; set; }
+        public string model { get; set; }
+        public string optionname { get; set; }
     }
 }

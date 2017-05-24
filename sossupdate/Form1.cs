@@ -30,9 +30,22 @@ namespace sossupdate
             //this.iTEMTableAdapter.Fill(this.oNLINEDBDataSet.ITEM);
             
             if (System.IO.File.Exists("data.xml")){
+                this.iTEMTableAdapter.Fill(this.oNLINEDBDataSet.ITEM);
                 DataSet ds = new DataSet();
-                oNLINEDBDataSet.ReadXml("data.xml");
+                ds.ReadXml("data.xml");
+                foreach (DataRow dr in ds.Tables[0].Rows)
+                {
+                    DataRow[] drs =oNLINEDBDataSet.ITEM.Select("M5ITCD='" + dr["M5ITCD"] + "'");
+                    if (drs.Length != 0)
+                    {
+                         drs[0]["OptionID"]=dr["OptionID"];
+                         drs[0]["ProductID"]=dr["ProductID"];
+                    }
+                    //DataView dv = new DataView(oNLINEDBDataSet.ITEM, "M5ITCD='" + dr["M5ITCD"] + "'", "M5ITCD Desc", DataViewRowState.CurrentRows).;
+                }
                 dataGridView1.DataSource = oNLINEDBDataSet.ITEM;
+                updatedata(oNLINEDBDataSet.ITEM);
+               
 
             }else{
                 this.iTEMTableAdapter.Fill(this.oNLINEDBDataSet.ITEM);
@@ -56,24 +69,33 @@ namespace sossupdate
         private ONLINEDBDataSet.ITEMDataTable updatedata(ONLINEDBDataSet.ITEMDataTable dt)
         {
             //ONLINEDBDataSet.ITEMDataTable dtnew = new ONLINEDBDataSet.ITEMDataTable();
-            string res = GET("http://localhost:9000/data/oc_product");
-            Responce<ProductContract> pr = FromJSON<Responce<ProductContract>>(res);
-            List<ProductContract> prlist = pr.response.ToList<ProductContract>();
-            res = GET("http://localhost:9000/data/oc_product_option_value");
-            Responce<ProductOptionValueContract> rpov = FromJSON<Responce<ProductOptionValueContract>>(res);
+            
+            var res = GET("http://localhost/soss/products");
+            ProductOptionValueContract[] rpov = FromJSON<ProductOptionValueContract[]>(res);
 
             //dataGridView1.
             foreach (DataRow dr in dt.Rows)
             {
-                string st = dr["M5ITCD"].ToString(); //return dt;
-                //prlist.Select
-                var querypritems = from pritems in prlist
-                                           where pritems.model == st
-                                           select pritems;
-                if (querypritems.ToList().Count != 0)
+                if (dr["ProductID"] != DBNull.Value)
                 {
-                    dr["responce"] = querypritems.ToList()[0].product_id;
-                    dr["QtyOnWeb"] = querypritems.ToList()[0].qty;
+                    int st = Convert.ToInt16(dr["ProductID"]); 
+                    int oid = Convert.ToInt16(dr["OptionID"]);  
+                  //return dt;
+                    //prlist.Select
+                    var querypritems = from pritems in rpov.ToList()
+                                       where pritems.product_id == st && pritems.option_value_id==oid
+                                       select pritems;
+                    if (querypritems.ToList().Count != 0)
+                    {
+                        dr["responce"] = querypritems.ToList()[0].model + " " + querypritems.ToList()[0].optionname;
+                        dr["QtyOnWeb"] = querypritems.ToList()[0].optqty;
+                        //dr["OptionID"] = querypritems.ToList()[0].option_value_id;
+                        //dr["ProductID"] = querypritems.ToList()[0].option_value_id;
+                    }
+                    else {
+                        dr["responce"] = "Error";
+                        dr["QtyOnWeb"] = 0;
+                    }
                 }
             }
 
