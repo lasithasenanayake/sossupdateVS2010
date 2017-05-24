@@ -28,6 +28,7 @@ namespace sossupdate
         {
             // TODO: This line of code loads data into the 'oNLINEDBDataSet.ITEM' table. You can move, or remove it, as needed.
             //this.iTEMTableAdapter.Fill(this.oNLINEDBDataSet.ITEM);
+            
             if (System.IO.File.Exists("data.xml")){
                 DataSet ds = new DataSet();
                 oNLINEDBDataSet.ReadXml("data.xml");
@@ -37,10 +38,11 @@ namespace sossupdate
                 this.iTEMTableAdapter.Fill(this.oNLINEDBDataSet.ITEM);
                 updatedata(this.oNLINEDBDataSet.ITEM);
                 dataGridView1.DataSource = oNLINEDBDataSet.ITEM;
-                
                 oNLINEDBDataSet.WriteXml("data.xml");
             }
 
+            //(dataGridView1.DataSource as DataTable).DefaultView.RowFilter = string.Format("Field = '{0}'", textBox1.Text);
+            
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -127,6 +129,19 @@ namespace sossupdate
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             oNLINEDBDataSet.WriteXml("data.xml");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text != "")
+            {
+                DataView dv = new DataView(oNLINEDBDataSet.ITEM, "M5ITCD='" + textBox1.Text + "'", "M5ITCD Desc", DataViewRowState.CurrentRows);
+                dataGridView1.DataSource = dv;
+            }
+            else
+            {
+                dataGridView1.DataSource = oNLINEDBDataSet.ITEM;
+            }
         }
     }
 }

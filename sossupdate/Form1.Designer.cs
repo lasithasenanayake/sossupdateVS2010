@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.ProductID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.OptionID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,8 +42,10 @@
             this.oNLINEDBDataSet = new sossupdate.ONLINEDBDataSet();
             this.iTEMTableAdapter = new sossupdate.ONLINEDBDataSetTableAdapters.ITEMTableAdapter();
             this.btnUpdate = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnsyncstart = new System.Windows.Forms.Button();
+            this.btnsyncstop = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iTEMBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.oNLINEDBDataSet)).BeginInit();
@@ -63,9 +66,9 @@
             this.QtyOnWeb,
             this.Updated,
             this.MapOnlineProduct});
-            this.dataGridView1.Location = new System.Drawing.Point(2, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(2, 45);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1096, 446);
+            this.dataGridView1.Size = new System.Drawing.Size(1096, 413);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -138,40 +141,61 @@
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // button2
+            // btnsyncstart
             // 
-            this.button2.Location = new System.Drawing.Point(888, 473);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(102, 22);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Start Sync";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnsyncstart.Location = new System.Drawing.Point(888, 473);
+            this.btnsyncstart.Name = "btnsyncstart";
+            this.btnsyncstart.Size = new System.Drawing.Size(102, 22);
+            this.btnsyncstart.TabIndex = 2;
+            this.btnsyncstart.Text = "Start Sync";
+            this.btnsyncstart.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnsyncstop
             // 
-            this.button3.Location = new System.Drawing.Point(996, 473);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(102, 22);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Stop Sync";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnsyncstop.Location = new System.Drawing.Point(996, 473);
+            this.btnsyncstop.Name = "btnsyncstop";
+            this.btnsyncstop.Size = new System.Drawing.Size(102, 22);
+            this.btnsyncstop.TabIndex = 3;
+            this.btnsyncstop.Text = "Stop Sync";
+            this.btnsyncstop.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(290, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Search";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(12, 15);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(272, 20);
+            this.textBox1.TabIndex = 5;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1110, 507);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnsyncstop);
+            this.Controls.Add(this.btnsyncstart);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.dataGridView1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Shopperz Inventory sync";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iTEMBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.oNLINEDBDataSet)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -189,8 +213,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Updated;
         private System.Windows.Forms.DataGridViewButtonColumn MapOnlineProduct;
         private System.Windows.Forms.Button btnUpdate;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnsyncstart;
+        private System.Windows.Forms.Button btnsyncstop;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
