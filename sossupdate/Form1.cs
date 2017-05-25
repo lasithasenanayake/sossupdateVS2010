@@ -14,6 +14,8 @@ namespace sossupdate
 {
     public partial class Form1 : Form
     {
+        private ProductOptionValueContract[] rpov;
+        private DataTable dtOnlineData = new DataTable();
         public Form1()
         {
             InitializeComponent();
@@ -69,9 +71,8 @@ namespace sossupdate
         private ONLINEDBDataSet.ITEMDataTable updatedata(ONLINEDBDataSet.ITEMDataTable dt)
         {
             //ONLINEDBDataSet.ITEMDataTable dtnew = new ONLINEDBDataSet.ITEMDataTable();
+            UpdateOnlineData();
             
-            var res = GET("http://localhost/soss/products");
-            ProductOptionValueContract[] rpov = FromJSON<ProductOptionValueContract[]>(res);
 
             //dataGridView1.
             foreach (DataRow dr in dt.Rows)
@@ -100,6 +101,35 @@ namespace sossupdate
             }
 
             return dt;
+        }
+
+        private void UpdateOnlineData()
+        {
+            var res = GET("http://shopperz.lk/ShopperzInventry/products");
+            rpov = FromJSON<ProductOptionValueContract[]>(res);
+            dtOnlineData = new DataTable();
+            dtOnlineData.Columns.Add("product_id");
+            dtOnlineData.Columns.Add("option_value_id");
+            dtOnlineData.Columns.Add("model");
+            dtOnlineData.Columns.Add("optionname"); 
+            dtOnlineData.Columns.Add("stockqty");
+            dtOnlineData.Columns.Add("optqty");
+            dtOnlineData.Columns.Add("option_id");
+
+            foreach (ProductOptionValueContract pv in rpov)
+            {
+                DataRow Dr = dtOnlineData.NewRow();
+                Dr["product_id"] = pv.product_id;
+                Dr["option_value_id"] = pv.option_value_id;
+                Dr["option_id"] = pv.option_id;
+                Dr["model"] = pv.model;
+                Dr["optionname"] = pv.optionname;
+                Dr["stockqty"] = pv.stockqty;
+                Dr["optqty"] = pv.optqty;
+                dtOnlineData.Rows.Add(Dr);
+            }
+
+            dataGridView2.DataSource = dtOnlineData;
         }
 
         private string GET(string url)
@@ -157,12 +187,15 @@ namespace sossupdate
         {
             if (textBox1.Text != "")
             {
-                DataView dv = new DataView(oNLINEDBDataSet.ITEM, "M5ITCD='" + textBox1.Text + "'", "M5ITCD Desc", DataViewRowState.CurrentRows);
+                DataView dv = new DataView(oNLINEDBDataSet.ITEM, "M5ITCD like '" + textBox1.Text + "%'", "M5ITCD Desc", DataViewRowState.CurrentRows);
                 dataGridView1.DataSource = dv;
+                DataView dv2 = new DataView(dtOnlineData, "model like '" + textBox1.Text + "%'", "model Desc", DataViewRowState.CurrentRows);
+                dataGridView2.DataSource = dv2;
             }
             else
             {
                 dataGridView1.DataSource = oNLINEDBDataSet.ITEM;
+                dataGridView2.DataSource = dtOnlineData;
             }
         }
     }

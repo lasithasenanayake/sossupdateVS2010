@@ -13,6 +13,10 @@
     <QTYINHAND>11</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
+    <responce>LS2618 Waist size - 38</responce>
+    <QtyOnWeb>1</QtyOnWeb>
+    <ProductID>399</ProductID>
+    <OptionID>102</OptionID>
   </ITEM>
   <ITEM>
     <M5ITCD>AD80</M5ITCD>
@@ -167,6 +171,10 @@
     <QTYINHAND>9</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
+    <responce>LS2618 Waist size - 28</responce>
+    <QtyOnWeb>3</QtyOnWeb>
+    <ProductID>399</ProductID>
+    <OptionID>97</OptionID>
   </ITEM>
   <ITEM>
     <M5ITCD>LS2613</M5ITCD>
@@ -64960,6 +64968,8 @@
     <MZIZE>XL</MZIZE>
     <QTYINHAND>1</QTYINHAND>
     <Updated>0</Updated>
+    <ProductID>199</ProductID>
+    <OptionID>94</OptionID>
   </ITEM>
   <ITEM>
     <M5ITCD>LS1577</M5ITCD>
@@ -103211,8 +103221,10 @@
     <QTYINHAND>0.0000</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
-    <ProductID>276</ProductID>
-    <OptionID>94</OptionID>
+    <responce>MS1410 Extra Large (XL)</responce>
+    <QtyOnWeb>1</QtyOnWeb>
+    <ProductID>199</ProductID>
+    <OptionID>90</OptionID>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1411</M5ITCD>
@@ -103220,6 +103232,8 @@
     <QTYINHAND>4</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
+    <ProductID>199</ProductID>
+    <OptionID>91</OptionID>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1412</M5ITCD>
@@ -103227,6 +103241,8 @@
     <QTYINHAND>2</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
+    <ProductID>199</ProductID>
+    <OptionID>92</OptionID>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1413</M5ITCD>
@@ -103234,6 +103250,8 @@
     <QTYINHAND>4</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
+    <ProductID>199</ProductID>
+    <OptionID>93</OptionID>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1414</M5ITCD>
@@ -103241,12 +103259,14 @@
     <QTYINHAND>1</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
+    <ProductID>199</ProductID>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1415</M5ITCD>
     <MZIZE>XXL</MZIZE>
     <QTYINHAND>1</QTYINHAND>
     <Updated>0</Updated>
+    <ProductID>199</ProductID>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1416</M5ITCD>
@@ -103254,6 +103274,7 @@
     <QTYINHAND>7</QTYINHAND>
     <LUUPDATEWEB>24/02/2017</LUUPDATEWEB>
     <Updated>0</Updated>
+    <ProductID>199</ProductID>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1417</M5ITCD>
@@ -103261,6 +103282,7 @@
     <QTYINHAND>22</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
+    <ProductID>199</ProductID>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1418</M5ITCD>
@@ -103268,6 +103290,7 @@
     <QTYINHAND>34</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
+    <ProductID>199</ProductID>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1419</M5ITCD>
@@ -103275,6 +103298,7 @@
     <QTYINHAND>20</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
+    <ProductID>199</ProductID>
   </ITEM>
   <ITEM>
     <M5ITCD>MS1420</M5ITCD>
@@ -109707,6 +109731,10 @@
     <QTYINHAND>26</QTYINHAND>
     <LUUPDATEWEB>23/03/2017</LUUPDATEWEB>
     <Updated>0</Updated>
+    <responce>LS2618 Waist size - 34</responce>
+    <QtyOnWeb>2</QtyOnWeb>
+    <ProductID>399</ProductID>
+    <OptionID>100</OptionID>
   </ITEM>
   <ITEM>
     <M5ITCD>LS2616</M5ITCD>

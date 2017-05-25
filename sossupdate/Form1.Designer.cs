@@ -46,7 +46,8 @@
             this.responce = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.QtyOnWeb = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Updated = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MapOnlineProduct = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iTEMBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.oNLINEDBDataSet)).BeginInit();
@@ -66,11 +67,10 @@
             this.OptionID,
             this.responce,
             this.QtyOnWeb,
-            this.Updated,
-            this.MapOnlineProduct});
+            this.Updated});
             this.dataGridView1.Location = new System.Drawing.Point(2, 45);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(784, 408);
+            this.dataGridView1.Size = new System.Drawing.Size(667, 408);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -128,7 +128,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(290, 12);
+            this.button1.Location = new System.Drawing.Point(390, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 4;
@@ -138,19 +138,21 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 15);
+            this.textBox1.Location = new System.Drawing.Point(65, 15);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(272, 20);
+            this.textBox1.Size = new System.Drawing.Size(319, 20);
             this.textBox1.TabIndex = 5;
             // 
             // dataGridView2
             // 
+            this.dataGridView2.AllowUserToAddRows = false;
+            this.dataGridView2.AllowUserToDeleteRows = false;
             this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(792, 45);
+            this.dataGridView2.Location = new System.Drawing.Point(675, 45);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(325, 407);
+            this.dataGridView2.Size = new System.Drawing.Size(442, 407);
             this.dataGridView2.TabIndex = 6;
             // 
             // ProductID
@@ -189,16 +191,32 @@
             this.Updated.Name = "Updated";
             this.Updated.ReadOnly = true;
             // 
-            // MapOnlineProduct
+            // label1
             // 
-            this.MapOnlineProduct.HeaderText = "Map Online Product";
-            this.MapOnlineProduct.Name = "MapOnlineProduct";
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(672, 29);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(63, 13);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Online Data";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 15);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(47, 13);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "M5ITCD";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1130, 509);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
@@ -237,7 +255,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn responce;
         private System.Windows.Forms.DataGridViewTextBoxColumn QtyOnWeb;
         private System.Windows.Forms.DataGridViewTextBoxColumn Updated;
-        private System.Windows.Forms.DataGridViewButtonColumn MapOnlineProduct;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 
