@@ -79,12 +79,12 @@ namespace sossupdate
             {
                 if (dr["ProductID"] != DBNull.Value)
                 {
-                    int st = Convert.ToInt16(dr["ProductID"]); 
-                    int oid = Convert.ToInt16(dr["OptionID"]);  
-                  //return dt;
+                    int st = Convert.ToInt16(dr["ProductID"]);
+                    int oid = Convert.ToInt16(dr["OptionID"]==DBNull.Value?0:dr["OptionID"]);
+                    //return dt;
                     //prlist.Select
                     var querypritems = from pritems in rpov.ToList()
-                                       where pritems.product_id == st && pritems.option_value_id==oid
+                                       where pritems.product_id == st && pritems.option_value_id == oid
                                        select pritems;
                     if (querypritems.ToList().Count != 0)
                     {
@@ -93,10 +93,14 @@ namespace sossupdate
                         //dr["OptionID"] = querypritems.ToList()[0].option_value_id;
                         //dr["ProductID"] = querypritems.ToList()[0].option_value_id;
                     }
-                    else {
+                    else
+                    {
                         dr["responce"] = "Error";
                         dr["QtyOnWeb"] = 0;
                     }
+                }
+                else {
+                    dr["responce"] = "Not Mapped";
                 }
             }
 
@@ -197,6 +201,11 @@ namespace sossupdate
                 dataGridView1.DataSource = oNLINEDBDataSet.ITEM;
                 dataGridView2.DataSource = dtOnlineData;
             }
+        }
+
+        private void btnsyncstart_Click(object sender, EventArgs e)
+        {
+            updatedata(oNLINEDBDataSet.ITEM);
         }
     }
 }

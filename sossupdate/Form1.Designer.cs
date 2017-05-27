@@ -46,12 +46,13 @@
             this.responce = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.QtyOnWeb = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Updated = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iTEMBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.oNLINEDBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -68,9 +69,9 @@
             this.responce,
             this.QtyOnWeb,
             this.Updated});
-            this.dataGridView1.Location = new System.Drawing.Point(2, 45);
+            this.dataGridView1.Location = new System.Drawing.Point(2, 99);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(667, 408);
+            this.dataGridView1.Size = new System.Drawing.Size(667, 407);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -98,7 +99,7 @@
             // btnUpdate
             // 
             this.btnUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnUpdate.Location = new System.Drawing.Point(784, 472);
+            this.btnUpdate.Location = new System.Drawing.Point(784, 525);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(118, 23);
             this.btnUpdate.TabIndex = 1;
@@ -109,17 +110,18 @@
             // btnsyncstart
             // 
             this.btnsyncstart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnsyncstart.Location = new System.Drawing.Point(908, 473);
+            this.btnsyncstart.Location = new System.Drawing.Point(908, 526);
             this.btnsyncstart.Name = "btnsyncstart";
             this.btnsyncstart.Size = new System.Drawing.Size(102, 22);
             this.btnsyncstart.TabIndex = 2;
             this.btnsyncstart.Text = "Start Sync";
             this.btnsyncstart.UseVisualStyleBackColor = true;
+            this.btnsyncstart.Click += new System.EventHandler(this.btnsyncstart_Click);
             // 
             // btnsyncstop
             // 
             this.btnsyncstop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnsyncstop.Location = new System.Drawing.Point(1016, 473);
+            this.btnsyncstop.Location = new System.Drawing.Point(1016, 526);
             this.btnsyncstop.Name = "btnsyncstop";
             this.btnsyncstop.Size = new System.Drawing.Size(102, 22);
             this.btnsyncstop.TabIndex = 3;
@@ -128,7 +130,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(390, 12);
+            this.button1.Location = new System.Drawing.Point(387, 63);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 4;
@@ -138,7 +140,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(65, 15);
+            this.textBox1.Location = new System.Drawing.Point(62, 63);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(319, 20);
             this.textBox1.TabIndex = 5;
@@ -150,9 +152,9 @@
             this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(675, 45);
+            this.dataGridView2.Location = new System.Drawing.Point(675, 99);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(442, 407);
+            this.dataGridView2.Size = new System.Drawing.Size(442, 406);
             this.dataGridView2.TabIndex = 6;
             // 
             // ProductID
@@ -191,32 +193,34 @@
             this.Updated.Name = "Updated";
             this.Updated.ReadOnly = true;
             // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(672, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 13);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Online Data";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 15);
+            this.label2.Location = new System.Drawing.Point(9, 63);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 13);
             this.label2.TabIndex = 8;
             this.label2.Text = "M5ITCD";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(899, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(218, 91);
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1130, 509);
+            this.ClientSize = new System.Drawing.Size(1130, 562);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
@@ -232,6 +236,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.iTEMBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.oNLINEDBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -255,8 +260,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn responce;
         private System.Windows.Forms.DataGridViewTextBoxColumn QtyOnWeb;
         private System.Windows.Forms.DataGridViewTextBoxColumn Updated;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
