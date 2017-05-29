@@ -1,0 +1,10 @@
+C:\Users\Lasitha\Documents\Visual Studio 2010\Projects\sossupdate\sossupdate\bin\Release\sossupdate.exe.config
+C:\Users\Lasitha\Documents\Visual Studio 2010\Projects\sossupdate\sossupdate\bin\Release\ONLINEDB.mdb
+C:\Users\Lasitha\Documents\Visual Studio 2010\Projects\sossupdate\sossupdate\bin\Release\sossupdate.exe
+C:\Users\Lasitha\Documents\Visual Studio 2010\Projects\sossupdate\sossupdate\bin\Release\sossupdate.pdb
+C:\Users\Lasitha\Documents\Visual Studio 2010\Projects\sossupdate\sossupdate\obj\x86\Release\sossupdate.Form1.resources
+C:\Users\Lasitha\Documents\Visual Studio 2010\Projects\sossupdate\sossupdate\obj\x86\Release\sossupdate.OpenOnlinestore.resources
+C:\Users\Lasitha\Documents\Visual Studio 2010\Projects\sossupdate\sossupdate\obj\x86\Release\sossupdate.Properties.Resources.resources
+C:\Users\Lasitha\Documents\Visual Studio 2010\Projects\sossupdate\sossupdate\obj\x86\Release\sossupdate.csproj.GenerateResource.Cache
+C:\Users\Lasitha\Documents\Visual Studio 2010\Projects\sossupdate\sossupdate\obj\x86\Release\sossupdate.exe
+C:\Users\Lasitha\Documents\Visual Studio 2010\Projects\sossupdate\sossupdate\obj\x86\Release\sossupdate.pdb
