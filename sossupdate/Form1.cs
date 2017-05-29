@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using System.Net;
 using System.IO;
 using System.Runtime.Serialization.Json;
+using System.Configuration;
 
 namespace sossupdate
 {
@@ -16,8 +17,10 @@ namespace sossupdate
     {
         private ProductOptionValueContract[] rpov;
         private DataTable dtOnlineData = new DataTable();
+        private string URI = "";
         public Form1()
         {
+            URI = System.Configuration.ConfigurationManager.AppSettings["URI"];
             InitializeComponent();
         }
 
@@ -109,11 +112,11 @@ namespace sossupdate
 
         private void UpdateOnlineData()
         {
-            var res = GET("http://shopperz.lk/ShopperzInventry/products");
+            var res = GET(URI+"products");
             rpov = FromJSON<ProductOptionValueContract[]>(res);
             dtOnlineData = new DataTable();
-            dtOnlineData.Columns.Add("product_id");
             dtOnlineData.Columns.Add("option_value_id");
+            dtOnlineData.Columns.Add("product_id");
             dtOnlineData.Columns.Add("model");
             dtOnlineData.Columns.Add("optionname"); 
             dtOnlineData.Columns.Add("stockqty");
@@ -175,7 +178,7 @@ namespace sossupdate
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.ColumnIndex == 2)
+            if (e.ColumnIndex== 2)
             {
                 MessageBox.Show("SSS");
             }
@@ -205,7 +208,59 @@ namespace sossupdate
 
         private void btnsyncstart_Click(object sender, EventArgs e)
         {
+            timer1.Enabled = true;
+            btnsyncstop.Enabled = true;
+            btnsyncstart.Enabled = false;
             updatedata(oNLINEDBDataSet.ITEM);
+        }
+
+        private void btnsyncstop_Click(object sender, EventArgs e)
+        {
+            timer1.Enabled = false;
+            btnsyncstop.Enabled = false;
+            btnsyncstart.Enabled = true;
+        }
+
+        private void dataGridView1_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dataGridView1.Columns[e.ColumnIndex].Name == "OptionID" )
+            {
+
+                //int oid = Convert.ToInt16(dataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex].Value == DBNull.Value ? 0 : dataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex].Value);
+                //return dt;
+                //prlist.Select
+                try
+                {
+                    //int st = Convert.ToInt16(dataGridView1["ProductID", e.RowIndex].Value == DBNull.Value ? 0 : dataGridView1["ProductID", e.RowIndex].Value);
+                    int oid = Convert.ToInt16(dataGridView1["OptionID", e.RowIndex].Value == DBNull.Value ? 0 : dataGridView1["OptionID", e.RowIndex].Value);
+                    //return dt;
+                    //prlist.Select
+                    var querypritems = from pritems in rpov.ToList()
+                                       where pritems.option_value_id == oid
+                                       select pritems;
+
+                    if (querypritems.ToList().Count != 0)
+                    {
+                        dataGridView1["responce", e.RowIndex].Value = Convert.ToString(querypritems.ToList()[0].model + " " + querypritems.ToList()[0].optionname);
+                        dataGridView1["ProductID", e.RowIndex].Value = querypritems.ToList()[0].product_id;
+                        dataGridView1["QtyOnWeb", e.RowIndex].Value = querypritems.ToList()[0].optqty;
+
+
+
+                    }
+                    else
+                    {
+                        dataGridView1["responce", e.RowIndex].Value = "Error";
+                        dataGridView1["ProductID", e.RowIndex].Value = 0;
+                        dataGridView1["QtyOnWeb", e.RowIndex].Value = "0";
+                    }
+                }
+                catch (Exception ex)
+                {
+                    dataGridView1["responce", e.RowIndex].Value = "Error "+ ex.Message;
+                }
+            }
+           
         }
     }
 }

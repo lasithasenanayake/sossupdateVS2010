@@ -41,13 +41,17 @@
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.ProductID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.OptionID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.responce = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.QtyOnWeb = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Updated = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.OptionID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.responce = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProductID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.M5ITCD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MZIZE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QTYINHAND = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QtyOnWeb = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Updated = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LUUPDATEWEB = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iTEMBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.oNLINEDBDataSet)).BeginInit();
@@ -64,17 +68,22 @@
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ProductID,
             this.OptionID,
             this.responce,
+            this.ProductID,
+            this.M5ITCD,
+            this.MZIZE,
+            this.QTYINHAND,
             this.QtyOnWeb,
-            this.Updated});
+            this.Updated,
+            this.LUUPDATEWEB});
             this.dataGridView1.Location = new System.Drawing.Point(2, 99);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(667, 407);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellValueChanged);
             // 
             // timer1
             // 
@@ -121,12 +130,14 @@
             // btnsyncstop
             // 
             this.btnsyncstop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnsyncstop.Enabled = false;
             this.btnsyncstop.Location = new System.Drawing.Point(1016, 526);
             this.btnsyncstop.Name = "btnsyncstop";
             this.btnsyncstop.Size = new System.Drawing.Size(102, 22);
             this.btnsyncstop.TabIndex = 3;
             this.btnsyncstop.Text = "Stop Sync";
             this.btnsyncstop.UseVisualStyleBackColor = true;
+            this.btnsyncstop.Click += new System.EventHandler(this.btnsyncstop_Click);
             // 
             // button1
             // 
@@ -157,42 +168,6 @@
             this.dataGridView2.Size = new System.Drawing.Size(442, 406);
             this.dataGridView2.TabIndex = 6;
             // 
-            // ProductID
-            // 
-            this.ProductID.DataPropertyName = "ProductID";
-            this.ProductID.HeaderText = "ProductID";
-            this.ProductID.Name = "ProductID";
-            this.ProductID.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // OptionID
-            // 
-            this.OptionID.DataPropertyName = "OptionID";
-            this.OptionID.HeaderText = "OptionID";
-            this.OptionID.Name = "OptionID";
-            this.OptionID.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.OptionID.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // responce
-            // 
-            this.responce.DataPropertyName = "responce";
-            this.responce.HeaderText = "responce";
-            this.responce.Name = "responce";
-            this.responce.ReadOnly = true;
-            // 
-            // QtyOnWeb
-            // 
-            this.QtyOnWeb.DataPropertyName = "QtyOnWeb";
-            this.QtyOnWeb.HeaderText = "QtyOnWeb";
-            this.QtyOnWeb.Name = "QtyOnWeb";
-            this.QtyOnWeb.ReadOnly = true;
-            // 
-            // Updated
-            // 
-            this.Updated.DataPropertyName = "Updated";
-            this.Updated.HeaderText = "Updated";
-            this.Updated.Name = "Updated";
-            this.Updated.ReadOnly = true;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -213,6 +188,67 @@
             this.pictureBox1.Size = new System.Drawing.Size(218, 91);
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
+            // 
+            // OptionID
+            // 
+            this.OptionID.DataPropertyName = "OptionID";
+            this.OptionID.HeaderText = "Option Value ID";
+            this.OptionID.Name = "OptionID";
+            this.OptionID.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.OptionID.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // responce
+            // 
+            this.responce.DataPropertyName = "responce";
+            this.responce.HeaderText = "responce";
+            this.responce.Name = "responce";
+            this.responce.ReadOnly = true;
+            // 
+            // ProductID
+            // 
+            this.ProductID.DataPropertyName = "ProductID";
+            this.ProductID.HeaderText = "ProductID";
+            this.ProductID.Name = "ProductID";
+            this.ProductID.ReadOnly = true;
+            this.ProductID.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // M5ITCD
+            // 
+            this.M5ITCD.DataPropertyName = "M5ITCD";
+            this.M5ITCD.HeaderText = "M5ITCD";
+            this.M5ITCD.Name = "M5ITCD";
+            // 
+            // MZIZE
+            // 
+            this.MZIZE.DataPropertyName = "MZIZE";
+            this.MZIZE.HeaderText = "MZIZE";
+            this.MZIZE.Name = "MZIZE";
+            // 
+            // QTYINHAND
+            // 
+            this.QTYINHAND.DataPropertyName = "QTYINHAND";
+            this.QTYINHAND.HeaderText = "QTYINHAND";
+            this.QTYINHAND.Name = "QTYINHAND";
+            // 
+            // QtyOnWeb
+            // 
+            this.QtyOnWeb.DataPropertyName = "QtyOnWeb";
+            this.QtyOnWeb.HeaderText = "QtyOnWeb";
+            this.QtyOnWeb.Name = "QtyOnWeb";
+            this.QtyOnWeb.ReadOnly = true;
+            // 
+            // Updated
+            // 
+            this.Updated.DataPropertyName = "Updated";
+            this.Updated.HeaderText = "Updated";
+            this.Updated.Name = "Updated";
+            this.Updated.ReadOnly = true;
+            // 
+            // LUUPDATEWEB
+            // 
+            this.LUUPDATEWEB.DataPropertyName = "LUUPDATEWEB";
+            this.LUUPDATEWEB.HeaderText = "LUUPDATEWEB";
+            this.LUUPDATEWEB.Name = "LUUPDATEWEB";
             // 
             // Form1
             // 
@@ -255,13 +291,17 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ProductID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn OptionID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn responce;
-        private System.Windows.Forms.DataGridViewTextBoxColumn QtyOnWeb;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Updated;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn OptionID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn responce;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ProductID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn M5ITCD;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MZIZE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn QTYINHAND;
+        private System.Windows.Forms.DataGridViewTextBoxColumn QtyOnWeb;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Updated;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LUUPDATEWEB;
     }
 }
 
