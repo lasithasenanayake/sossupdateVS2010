@@ -31,6 +31,15 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.OptionID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.responce = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProductID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.M5ITCD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MZIZE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QTYINHAND = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QtyOnWeb = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Updated = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LUUPDATEWEB = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.iTEMBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.oNLINEDBDataSet = new sossupdate.ONLINEDBDataSet();
@@ -43,15 +52,7 @@
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.OptionID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.responce = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProductID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.M5ITCD = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MZIZE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.QTYINHAND = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.QtyOnWeb = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Updated = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LUUPDATEWEB = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnopennilsonlinestore = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iTEMBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.oNLINEDBDataSet)).BeginInit();
@@ -84,6 +85,67 @@
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellValueChanged);
+            // 
+            // OptionID
+            // 
+            this.OptionID.DataPropertyName = "OptionID";
+            this.OptionID.HeaderText = "Option Value ID";
+            this.OptionID.Name = "OptionID";
+            this.OptionID.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.OptionID.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // responce
+            // 
+            this.responce.DataPropertyName = "responce";
+            this.responce.HeaderText = "responce";
+            this.responce.Name = "responce";
+            this.responce.ReadOnly = true;
+            // 
+            // ProductID
+            // 
+            this.ProductID.DataPropertyName = "ProductID";
+            this.ProductID.HeaderText = "ProductID";
+            this.ProductID.Name = "ProductID";
+            this.ProductID.ReadOnly = true;
+            this.ProductID.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // M5ITCD
+            // 
+            this.M5ITCD.DataPropertyName = "M5ITCD";
+            this.M5ITCD.HeaderText = "M5ITCD";
+            this.M5ITCD.Name = "M5ITCD";
+            // 
+            // MZIZE
+            // 
+            this.MZIZE.DataPropertyName = "MZIZE";
+            this.MZIZE.HeaderText = "MZIZE";
+            this.MZIZE.Name = "MZIZE";
+            // 
+            // QTYINHAND
+            // 
+            this.QTYINHAND.DataPropertyName = "QTYINHAND";
+            this.QTYINHAND.HeaderText = "QTYINHAND";
+            this.QTYINHAND.Name = "QTYINHAND";
+            // 
+            // QtyOnWeb
+            // 
+            this.QtyOnWeb.DataPropertyName = "QtyOnWeb";
+            this.QtyOnWeb.HeaderText = "QtyOnWeb";
+            this.QtyOnWeb.Name = "QtyOnWeb";
+            this.QtyOnWeb.ReadOnly = true;
+            // 
+            // Updated
+            // 
+            this.Updated.DataPropertyName = "Updated";
+            this.Updated.HeaderText = "Updated";
+            this.Updated.Name = "Updated";
+            this.Updated.ReadOnly = true;
+            // 
+            // LUUPDATEWEB
+            // 
+            this.LUUPDATEWEB.DataPropertyName = "LUUPDATEWEB";
+            this.LUUPDATEWEB.HeaderText = "LUUPDATEWEB";
+            this.LUUPDATEWEB.Name = "LUUPDATEWEB";
             // 
             // timer1
             // 
@@ -189,72 +251,23 @@
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
-            // OptionID
+            // btnopennilsonlinestore
             // 
-            this.OptionID.DataPropertyName = "OptionID";
-            this.OptionID.HeaderText = "Option Value ID";
-            this.OptionID.Name = "OptionID";
-            this.OptionID.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.OptionID.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // responce
-            // 
-            this.responce.DataPropertyName = "responce";
-            this.responce.HeaderText = "responce";
-            this.responce.Name = "responce";
-            this.responce.ReadOnly = true;
-            // 
-            // ProductID
-            // 
-            this.ProductID.DataPropertyName = "ProductID";
-            this.ProductID.HeaderText = "ProductID";
-            this.ProductID.Name = "ProductID";
-            this.ProductID.ReadOnly = true;
-            this.ProductID.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // M5ITCD
-            // 
-            this.M5ITCD.DataPropertyName = "M5ITCD";
-            this.M5ITCD.HeaderText = "M5ITCD";
-            this.M5ITCD.Name = "M5ITCD";
-            // 
-            // MZIZE
-            // 
-            this.MZIZE.DataPropertyName = "MZIZE";
-            this.MZIZE.HeaderText = "MZIZE";
-            this.MZIZE.Name = "MZIZE";
-            // 
-            // QTYINHAND
-            // 
-            this.QTYINHAND.DataPropertyName = "QTYINHAND";
-            this.QTYINHAND.HeaderText = "QTYINHAND";
-            this.QTYINHAND.Name = "QTYINHAND";
-            // 
-            // QtyOnWeb
-            // 
-            this.QtyOnWeb.DataPropertyName = "QtyOnWeb";
-            this.QtyOnWeb.HeaderText = "QtyOnWeb";
-            this.QtyOnWeb.Name = "QtyOnWeb";
-            this.QtyOnWeb.ReadOnly = true;
-            // 
-            // Updated
-            // 
-            this.Updated.DataPropertyName = "Updated";
-            this.Updated.HeaderText = "Updated";
-            this.Updated.Name = "Updated";
-            this.Updated.ReadOnly = true;
-            // 
-            // LUUPDATEWEB
-            // 
-            this.LUUPDATEWEB.DataPropertyName = "LUUPDATEWEB";
-            this.LUUPDATEWEB.HeaderText = "LUUPDATEWEB";
-            this.LUUPDATEWEB.Name = "LUUPDATEWEB";
+            this.btnopennilsonlinestore.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnopennilsonlinestore.Location = new System.Drawing.Point(985, 482);
+            this.btnopennilsonlinestore.Name = "btnopennilsonlinestore";
+            this.btnopennilsonlinestore.Size = new System.Drawing.Size(133, 23);
+            this.btnopennilsonlinestore.TabIndex = 10;
+            this.btnopennilsonlinestore.Text = "Open New Window";
+            this.btnopennilsonlinestore.UseVisualStyleBackColor = true;
+            this.btnopennilsonlinestore.Click += new System.EventHandler(this.btnopennilsonlinestore_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1130, 562);
+            this.Controls.Add(this.btnopennilsonlinestore);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridView2);
@@ -302,6 +315,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn QtyOnWeb;
         private System.Windows.Forms.DataGridViewTextBoxColumn Updated;
         private System.Windows.Forms.DataGridViewTextBoxColumn LUUPDATEWEB;
+        private System.Windows.Forms.Button btnopennilsonlinestore;
     }
 }
 

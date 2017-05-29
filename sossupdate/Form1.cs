@@ -262,5 +262,11 @@ namespace sossupdate
             }
            
         }
+
+        private void btnopennilsonlinestore_Click(object sender, EventArgs e)
+        {
+            OpenOnlinestore oform = new OpenOnlinestore(dtOnlineData);
+            oform.Show();
+        }
     }
 }

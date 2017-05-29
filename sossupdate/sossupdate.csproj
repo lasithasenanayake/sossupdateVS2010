@@ -66,11 +66,20 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ONLINEDBDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="OpenOnlinestore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpenOnlinestore.Designer.cs">
+      <DependentUpon>OpenOnlinestore.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProductContract.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpenOnlinestore.resx">
+      <DependentUpon>OpenOnlinestore.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
