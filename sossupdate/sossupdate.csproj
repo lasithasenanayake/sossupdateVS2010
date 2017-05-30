@@ -72,7 +72,6 @@
     <Compile Include="OpenOnlinestore.Designer.cs">
       <DependentUpon>OpenOnlinestore.cs</DependentUpon>
     </Compile>
-    <Compile Include="ProductContract.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -119,6 +118,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="sossgrid_c9f_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\sossProcessors\sossProcessors.csproj">
+      <Project>{C2410EE3-7461-4DD8-A6E0-71276DF286EE}</Project>
+      <Name>sossProcessors</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

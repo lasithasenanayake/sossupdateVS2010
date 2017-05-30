@@ -6,17 +6,30 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using sossProcessors;
 
 namespace sossupdate
 {
     public partial class OpenOnlinestore : Form
     {
         DataTable dtOnlineData = new DataTable();
+        private string URI = "";
+
         public OpenOnlinestore(DataTable dt)
         {
             InitializeComponent();
             dtOnlineData = dt;
             
+        }
+
+        public OpenOnlinestore()
+        {
+            
+
+            InitializeComponent();
+            URI = System.Configuration.ConfigurationManager.AppSettings["URI"];
+            ShopperzConnector shopperzcon = new ShopperzConnector(URI);
+            dtOnlineData = shopperzcon.UpdateOnlineData(null);
         }
 
         private void OpenOnlinestore_Load(object sender, EventArgs e)

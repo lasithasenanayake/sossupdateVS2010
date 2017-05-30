@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table1>
+    <OptionID>988</OptionID>
+    <M5ITCD>LS2610</M5ITCD>
+  </Table1>
+  <Table1>
+    <OptionID>955</OptionID>
+    <M5ITCD>LS2611</M5ITCD>
+  </Table1>
+  <Table1>
+    <OptionID>956</OptionID>
+    <M5ITCD>AD80</M5ITCD>
+  </Table1>
+</NewDataSet>

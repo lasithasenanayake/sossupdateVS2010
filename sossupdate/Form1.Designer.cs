@@ -40,7 +40,6 @@
             this.QtyOnWeb = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Updated = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LUUPDATEWEB = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.iTEMBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.oNLINEDBDataSet = new sossupdate.ONLINEDBDataSet();
             this.iTEMTableAdapter = new sossupdate.ONLINEDBDataSetTableAdapters.ITEMTableAdapter();
@@ -146,12 +145,6 @@
             this.LUUPDATEWEB.DataPropertyName = "LUUPDATEWEB";
             this.LUUPDATEWEB.HeaderText = "LUUPDATEWEB";
             this.LUUPDATEWEB.Name = "LUUPDATEWEB";
-            // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 10000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // iTEMBindingSource
             // 
@@ -297,7 +290,6 @@
         private ONLINEDBDataSet oNLINEDBDataSet;
         private System.Windows.Forms.BindingSource iTEMBindingSource;
         private ONLINEDBDataSetTableAdapters.ITEMTableAdapter iTEMTableAdapter;
-        private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnsyncstart;
         private System.Windows.Forms.Button btnsyncstop;

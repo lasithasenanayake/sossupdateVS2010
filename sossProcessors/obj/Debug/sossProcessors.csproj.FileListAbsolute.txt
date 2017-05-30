@@ -1,0 +1,4 @@
+C:\Users\Lasitha\Documents\Visual Studio 2010\Projects\sossupdate\sossProcessors\bin\Debug\sossProcessors.dll
+C:\Users\Lasitha\Documents\Visual Studio 2010\Projects\sossupdate\sossProcessors\bin\Debug\sossProcessors.pdb
+C:\Users\Lasitha\Documents\Visual Studio 2010\Projects\sossupdate\sossProcessors\obj\Debug\sossProcessors.dll
+C:\Users\Lasitha\Documents\Visual Studio 2010\Projects\sossupdate\sossProcessors\obj\Debug\sossProcessors.pdb

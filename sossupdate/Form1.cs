@@ -10,6 +10,7 @@ using System.Net;
 using System.IO;
 using System.Runtime.Serialization.Json;
 using System.Configuration;
+using sossProcessors;
 
 namespace sossupdate
 {
@@ -18,9 +19,13 @@ namespace sossupdate
         private ProductOptionValueContract[] rpov;
         private DataTable dtOnlineData = new DataTable();
         private string URI = "";
+        private DataSet DsMappings;
+        private FileLocker flMapping = new FileLocker("mapping");
+        private ShopperzConnector shopperzcon;
         public Form1()
         {
             URI = System.Configuration.ConfigurationManager.AppSettings["URI"];
+            shopperzcon = new ShopperzConnector(URI);
             InitializeComponent();
         }
 
@@ -38,13 +43,15 @@ namespace sossupdate
                 this.iTEMTableAdapter.Fill(this.oNLINEDBDataSet.ITEM);
                 DataSet ds = new DataSet();
                 ds.ReadXml("data.xml");
-                foreach (DataRow dr in ds.Tables[0].Rows)
+                DsMappings = new DataSet();
+                DsMappings.ReadXml("mappings.xml");
+                foreach (DataRow dr in DsMappings.Tables[0].Rows)
                 {
                     DataRow[] drs =oNLINEDBDataSet.ITEM.Select("M5ITCD='" + dr["M5ITCD"] + "'");
                     if (drs.Length != 0)
                     {
                          drs[0]["OptionID"]=dr["OptionID"];
-                         drs[0]["ProductID"]=dr["ProductID"];
+                         //drs[0]["ProductID"]=dr["ProductID"];
                     }
                     //DataView dv = new DataView(oNLINEDBDataSet.ITEM, "M5ITCD='" + dr["M5ITCD"] + "'", "M5ITCD Desc", DataViewRowState.CurrentRows).;
                 }
@@ -56,19 +63,14 @@ namespace sossupdate
                 this.iTEMTableAdapter.Fill(this.oNLINEDBDataSet.ITEM);
                 updatedata(this.oNLINEDBDataSet.ITEM);
                 dataGridView1.DataSource = oNLINEDBDataSet.ITEM;
-                oNLINEDBDataSet.WriteXml("data.xml");
+                //oNLINEDBDataSet.WriteXml("data.xml");
             }
 
             //(dataGridView1.DataSource as DataTable).DefaultView.RowFilter = string.Format("Field = '{0}'", textBox1.Text);
             
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            timer1.Enabled = false;
-           
-            //timer1.Enabled = true;
-        }
+        
 
 
         private ONLINEDBDataSet.ITEMDataTable updatedata(ONLINEDBDataSet.ITEMDataTable dt)
@@ -80,21 +82,21 @@ namespace sossupdate
             //dataGridView1.
             foreach (DataRow dr in dt.Rows)
             {
-                if (dr["ProductID"] != DBNull.Value)
+                if (dr["OptionID"] != DBNull.Value)
                 {
-                    int st = Convert.ToInt16(dr["ProductID"]);
+                    //int st = Convert.ToInt16(dr["ProductID"]);
                     int oid = Convert.ToInt16(dr["OptionID"]==DBNull.Value?0:dr["OptionID"]);
                     //return dt;
                     //prlist.Select
                     var querypritems = from pritems in rpov.ToList()
-                                       where pritems.product_id == st && pritems.option_value_id == oid
+                                       where  pritems.option_value_id == oid
                                        select pritems;
                     if (querypritems.ToList().Count != 0)
                     {
                         dr["responce"] = querypritems.ToList()[0].model + " " + querypritems.ToList()[0].optionname;
                         dr["QtyOnWeb"] = querypritems.ToList()[0].optqty;
                         //dr["OptionID"] = querypritems.ToList()[0].option_value_id;
-                        //dr["ProductID"] = querypritems.ToList()[0].option_value_id;
+                        dr["ProductID"] = querypritems.ToList()[0].product_id;
                     }
                     else
                     {
@@ -103,7 +105,7 @@ namespace sossupdate
                     }
                 }
                 else {
-                    dr["responce"] = "Not Mapped";
+                    //dr["responce"] = "Not Mapped";
                 }
             }
 
@@ -112,82 +114,82 @@ namespace sossupdate
 
         private void UpdateOnlineData()
         {
-            var res = GET(URI+"products");
-            rpov = FromJSON<ProductOptionValueContract[]>(res);
-            dtOnlineData = new DataTable();
-            dtOnlineData.Columns.Add("option_value_id");
-            dtOnlineData.Columns.Add("product_id");
-            dtOnlineData.Columns.Add("model");
-            dtOnlineData.Columns.Add("optionname"); 
-            dtOnlineData.Columns.Add("stockqty");
-            dtOnlineData.Columns.Add("optqty");
-            dtOnlineData.Columns.Add("option_id");
-
-            foreach (ProductOptionValueContract pv in rpov)
-            {
-                DataRow Dr = dtOnlineData.NewRow();
-                Dr["product_id"] = pv.product_id;
-                Dr["option_value_id"] = pv.option_value_id;
-                Dr["option_id"] = pv.option_id;
-                Dr["model"] = pv.model;
-                Dr["optionname"] = pv.optionname;
-                Dr["stockqty"] = pv.stockqty;
-                Dr["optqty"] = pv.optqty;
-                dtOnlineData.Rows.Add(Dr);
-            }
-
+            
+            dtOnlineData = shopperzcon.UpdateOnlineData(DsMappings);
             dataGridView2.DataSource = dtOnlineData;
+            rpov = shopperzcon.GetOnlineProduct();
         }
 
-        private string GET(string url)
-        {
-            WebRequest request = (HttpWebRequest)WebRequest.Create(url);
-            try
-            {
-                WebResponse response = request.GetResponse();
-                
-                using (Stream responseStream = response.GetResponseStream())
-                {
-                    StreamReader reader = new StreamReader(responseStream, Encoding.UTF8);
-                    return reader.ReadToEnd();
-                }
-            }
-            catch (WebException ex)
-            {
-                WebResponse errorResponse = ex.Response;
-                using (Stream responseStream = errorResponse.GetResponseStream())
-                {
-                    StreamReader reader = new StreamReader(responseStream, Encoding.GetEncoding("utf-8"));
-                    String errorText = reader.ReadToEnd();
-                    // log errorText
-                }
-                throw;
-            }
-        }
-
-        public static T FromJSON<T>(string json)
-        {
-            T outObj = default(T);
-            DataContractJsonSerializer serializer = new DataContractJsonSerializer(typeof(T));
-            using (MemoryStream ms = new MemoryStream(Encoding.Unicode.GetBytes(json)))
-            {
-                outObj = (T)serializer.ReadObject(ms);
-            }
-            return outObj;
-        }
+        
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.ColumnIndex== 2)
-            {
-                MessageBox.Show("SSS");
-            }
+           
 
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            oNLINEDBDataSet.WriteXml("data.xml");
+            btnUpdate.Enabled=false;
+            try
+            {
+                while (!flMapping.Lock())
+                {
+
+                }
+
+                DataTable dtModified = oNLINEDBDataSet.ITEM.GetChanges(DataRowState.Modified);
+                //DataTable dtAdded = oNLINEDBDataSet.ITEM.GetChanges(DataRowState.Added);
+                if (!System.IO.File.Exists("mappings.xml"))
+                {
+                    DataTable dtMappingData = new DataTable();
+                    dtMappingData.Columns.Add("OptionID");
+                    dtMappingData.Columns.Add("M5ITCD");
+                    DsMappings = new DataSet();
+                    DsMappings.Tables.Add(dtMappingData);
+                }
+                else
+                {
+                    DsMappings = new DataSet();
+                    DsMappings.ReadXml("mappings.xml");
+                }
+
+                foreach (DataRow dr in dtModified.Rows)
+                {
+                    DataRow[] drs = DsMappings.Tables[0].Select("M5ITCD ='" + dr["M5ITCD"] + "'");
+                    if (drs.Length != 0)
+                    {
+                        if (dr["OptionID"] != DBNull.Value)
+                        {
+                            drs[0]["OptionID"] = dr["OptionID"];
+                        }
+                        else {
+                            DsMappings.Tables[0].Rows.Remove(drs[0]);
+                        }
+                    }
+                    else
+                    {
+                        DsMappings.Tables[0].Rows.Add(dr["OptionID"], dr["M5ITCD"]);
+                    }
+                }
+
+
+
+                DsMappings.WriteXml("mappings.xml");
+                oNLINEDBDataSet.WriteXml("data.xml");
+                
+                flMapping.Release();
+                UpdateOnlineData();
+                MessageBox.Show("Mapping Has been saved.", "Online Mapper", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch(Exception ex) {
+                flMapping.Release();
+                MessageBox.Show(ex.Message, "Online Mapper Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }finally{
+                //flMapping.Release();
+                btnUpdate.Enabled=true;
+            }
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -208,7 +210,7 @@ namespace sossupdate
 
         private void btnsyncstart_Click(object sender, EventArgs e)
         {
-            timer1.Enabled = true;
+            //timer1.Enabled = true;
             btnsyncstop.Enabled = true;
             btnsyncstart.Enabled = false;
             updatedata(oNLINEDBDataSet.ITEM);
@@ -216,7 +218,7 @@ namespace sossupdate
 
         private void btnsyncstop_Click(object sender, EventArgs e)
         {
-            timer1.Enabled = false;
+            //timer1.Enabled = false;
             btnsyncstop.Enabled = false;
             btnsyncstart.Enabled = true;
         }
@@ -265,7 +267,7 @@ namespace sossupdate
 
         private void btnopennilsonlinestore_Click(object sender, EventArgs e)
         {
-            OpenOnlinestore oform = new OpenOnlinestore(dtOnlineData);
+            OpenOnlinestore oform = new OpenOnlinestore();
             oform.Show();
         }
     }

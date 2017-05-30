@@ -8,3 +8,6 @@ C:\Users\Lasitha\Documents\Visual Studio 2010\Projects\sossupdate\sossupdate\obj
 C:\Users\Lasitha\Documents\Visual Studio 2010\Projects\sossupdate\sossupdate\obj\x86\Debug\sossupdate.exe
 C:\Users\Lasitha\Documents\Visual Studio 2010\Projects\sossupdate\sossupdate\obj\x86\Debug\sossupdate.pdb
 C:\Users\Lasitha\Documents\Visual Studio 2010\Projects\sossupdate\sossupdate\obj\x86\Debug\sossupdate.OpenOnlinestore.resources
+C:\Users\Lasitha\Documents\Visual Studio 2010\Projects\sossupdate\sossupdate\bin\Debug\sossProcessors.dll
+C:\Users\Lasitha\Documents\Visual Studio 2010\Projects\sossupdate\sossupdate\bin\Debug\sossProcessors.pdb
+C:\Users\Lasitha\Documents\Visual Studio 2010\Projects\sossupdate\sossupdate\obj\x86\Debug\sossupdate.csprojResolveAssemblyReference.cache
