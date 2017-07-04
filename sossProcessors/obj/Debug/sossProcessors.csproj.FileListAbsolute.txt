@@ -2,3 +2,8 @@ C:\Users\Lasitha\Documents\Visual Studio 2010\Projects\sossupdate\sossProcessors
 C:\Users\Lasitha\Documents\Visual Studio 2010\Projects\sossupdate\sossProcessors\bin\Debug\sossProcessors.pdb
 C:\Users\Lasitha\Documents\Visual Studio 2010\Projects\sossupdate\sossProcessors\obj\Debug\sossProcessors.dll
 C:\Users\Lasitha\Documents\Visual Studio 2010\Projects\sossupdate\sossProcessors\obj\Debug\sossProcessors.pdb
+D:\Projects\GitHub\sossupdateVS2010\sossProcessors\bin\Debug\sossProcessors.dll
+D:\Projects\GitHub\sossupdateVS2010\sossProcessors\bin\Debug\sossProcessors.pdb
+D:\Projects\GitHub\sossupdateVS2010\sossProcessors\obj\Debug\sossProcessors.csprojResolveAssemblyReference.cache
+D:\Projects\GitHub\sossupdateVS2010\sossProcessors\obj\Debug\sossProcessors.dll
+D:\Projects\GitHub\sossupdateVS2010\sossProcessors\obj\Debug\sossProcessors.pdb

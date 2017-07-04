@@ -4,3 +4,11 @@ C:\Users\Lasitha\Documents\Visual Studio 2010\Projects\sossupdate\sossservice\ob
 C:\Users\Lasitha\Documents\Visual Studio 2010\Projects\sossupdate\sossservice\obj\x86\Debug\sossservice.csproj.GenerateResource.Cache
 C:\Users\Lasitha\Documents\Visual Studio 2010\Projects\sossupdate\sossservice\obj\x86\Debug\sossservice.exe
 C:\Users\Lasitha\Documents\Visual Studio 2010\Projects\sossupdate\sossservice\obj\x86\Debug\sossservice.pdb
+D:\Projects\GitHub\sossupdateVS2010\sossservice\bin\Debug\sossservice.exe.config
+D:\Projects\GitHub\sossupdateVS2010\sossservice\bin\Debug\sossservice.exe
+D:\Projects\GitHub\sossupdateVS2010\sossservice\bin\Debug\sossservice.pdb
+D:\Projects\GitHub\sossupdateVS2010\sossservice\obj\x86\Debug\sossservice.csprojResolveAssemblyReference.cache
+D:\Projects\GitHub\sossupdateVS2010\sossservice\obj\x86\Debug\sossservice.Properties.Resources.resources
+D:\Projects\GitHub\sossupdateVS2010\sossservice\obj\x86\Debug\sossservice.csproj.GenerateResource.Cache
+D:\Projects\GitHub\sossupdateVS2010\sossservice\obj\x86\Debug\sossservice.exe
+D:\Projects\GitHub\sossupdateVS2010\sossservice\obj\x86\Debug\sossservice.pdb

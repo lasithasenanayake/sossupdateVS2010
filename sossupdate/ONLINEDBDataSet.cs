@@ -1,7 +1,9 @@
-﻿namespace sossupdate {
-    
-    
-    public partial class ONLINEDBDataSet {
+﻿namespace sossupdate
+{
+
+
+    public partial class ONLINEDBDataSet
+    {
         partial class ITEMDataTable
         {
         }

@@ -59,7 +59,6 @@
     </Compile>
     <Compile Include="ONLINEDBDataSet.cs">
       <DependentUpon>ONLINEDBDataSet.xsd</DependentUpon>
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="ONLINEDBDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -88,6 +87,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="app.config">
       <SubType>Designer</SubType>
