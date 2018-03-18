@@ -24,8 +24,6 @@ namespace sossupdate
 
         public OpenOnlinestore()
         {
-            
-
             InitializeComponent();
             URI = System.Configuration.ConfigurationManager.AppSettings["URI"];
             ShopperzConnector shopperzcon = new ShopperzConnector(URI);
@@ -40,14 +38,12 @@ namespace sossupdate
         private void button1_Click(object sender, EventArgs e)
         {
             if (textBox1.Text != "")
-            {
-                
+            {       
                 DataView dv2 = new DataView(dtOnlineData, "model like '" + textBox1.Text + "%'", "model Desc", DataViewRowState.CurrentRows);
                 dataGridView1.DataSource = dv2;
             }
             else
-            {
-                
+            {   
                 dataGridView1.DataSource = dtOnlineData;
             }
         }

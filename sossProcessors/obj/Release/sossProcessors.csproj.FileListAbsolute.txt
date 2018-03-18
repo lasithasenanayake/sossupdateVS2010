@@ -1,0 +1,4 @@
+D:\Projects\GitHub\sossupdateVS2010\sossProcessors\bin\Release\sossProcessors.dll
+D:\Projects\GitHub\sossupdateVS2010\sossProcessors\bin\Release\sossProcessors.pdb
+D:\Projects\GitHub\sossupdateVS2010\sossProcessors\obj\Release\sossProcessors.dll
+D:\Projects\GitHub\sossupdateVS2010\sossProcessors\obj\Release\sossProcessors.pdb

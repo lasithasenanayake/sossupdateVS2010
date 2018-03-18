@@ -63,9 +63,9 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.OptionID,
@@ -77,9 +77,10 @@
             this.QtyOnWeb,
             this.Updated,
             this.LUUPDATEWEB});
-            this.dataGridView1.Location = new System.Drawing.Point(2, 99);
+            this.dataGridView1.Location = new System.Drawing.Point(3, 122);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(667, 407);
+            this.dataGridView1.Size = new System.Drawing.Size(889, 501);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -163,9 +164,10 @@
             // btnUpdate
             // 
             this.btnUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnUpdate.Location = new System.Drawing.Point(784, 525);
+            this.btnUpdate.Location = new System.Drawing.Point(1045, 646);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(118, 23);
+            this.btnUpdate.Size = new System.Drawing.Size(157, 28);
             this.btnUpdate.TabIndex = 1;
             this.btnUpdate.Text = "Update Data";
             this.btnUpdate.UseVisualStyleBackColor = true;
@@ -174,9 +176,10 @@
             // btnsyncstart
             // 
             this.btnsyncstart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnsyncstart.Location = new System.Drawing.Point(908, 526);
+            this.btnsyncstart.Location = new System.Drawing.Point(1211, 647);
+            this.btnsyncstart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnsyncstart.Name = "btnsyncstart";
-            this.btnsyncstart.Size = new System.Drawing.Size(102, 22);
+            this.btnsyncstart.Size = new System.Drawing.Size(136, 27);
             this.btnsyncstart.TabIndex = 2;
             this.btnsyncstart.Text = "Start Sync";
             this.btnsyncstart.UseVisualStyleBackColor = true;
@@ -186,9 +189,10 @@
             // 
             this.btnsyncstop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnsyncstop.Enabled = false;
-            this.btnsyncstop.Location = new System.Drawing.Point(1016, 526);
+            this.btnsyncstop.Location = new System.Drawing.Point(1355, 647);
+            this.btnsyncstop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnsyncstop.Name = "btnsyncstop";
-            this.btnsyncstop.Size = new System.Drawing.Size(102, 22);
+            this.btnsyncstop.Size = new System.Drawing.Size(136, 27);
             this.btnsyncstop.TabIndex = 3;
             this.btnsyncstop.Text = "Stop Sync";
             this.btnsyncstop.UseVisualStyleBackColor = true;
@@ -196,9 +200,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(387, 63);
+            this.button1.Location = new System.Drawing.Point(516, 78);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(100, 28);
             this.button1.TabIndex = 4;
             this.button1.Text = "Search";
             this.button1.UseVisualStyleBackColor = true;
@@ -206,29 +211,32 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(62, 63);
+            this.textBox1.Location = new System.Drawing.Point(83, 78);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(319, 20);
+            this.textBox1.Size = new System.Drawing.Size(424, 22);
             this.textBox1.TabIndex = 5;
             // 
             // dataGridView2
             // 
             this.dataGridView2.AllowUserToAddRows = false;
             this.dataGridView2.AllowUserToDeleteRows = false;
-            this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(675, 99);
+            this.dataGridView2.Location = new System.Drawing.Point(900, 122);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(442, 406);
+            this.dataGridView2.Size = new System.Drawing.Size(589, 500);
             this.dataGridView2.TabIndex = 6;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 63);
+            this.label2.Location = new System.Drawing.Point(12, 78);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 13);
+            this.label2.Size = new System.Drawing.Size(58, 17);
             this.label2.TabIndex = 8;
             this.label2.Text = "M5ITCD";
             // 
@@ -238,18 +246,20 @@
             this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(899, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(1199, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(218, 91);
+            this.pictureBox1.Size = new System.Drawing.Size(291, 112);
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
             // btnopennilsonlinestore
             // 
             this.btnopennilsonlinestore.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnopennilsonlinestore.Location = new System.Drawing.Point(985, 482);
+            this.btnopennilsonlinestore.Location = new System.Drawing.Point(1313, 593);
+            this.btnopennilsonlinestore.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnopennilsonlinestore.Name = "btnopennilsonlinestore";
-            this.btnopennilsonlinestore.Size = new System.Drawing.Size(133, 23);
+            this.btnopennilsonlinestore.Size = new System.Drawing.Size(177, 28);
             this.btnopennilsonlinestore.TabIndex = 10;
             this.btnopennilsonlinestore.Text = "Open New Window";
             this.btnopennilsonlinestore.UseVisualStyleBackColor = true;
@@ -257,9 +267,9 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1130, 562);
+            this.ClientSize = new System.Drawing.Size(1507, 692);
             this.Controls.Add(this.btnopennilsonlinestore);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
@@ -271,6 +281,7 @@
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.dataGridView1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Shopperz Inventory sync";
             this.Load += new System.EventHandler(this.Form1_Load);

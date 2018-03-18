@@ -41,6 +41,7 @@ namespace sossupdate
             
             if (System.IO.File.Exists("data.xml")){
                 this.iTEMTableAdapter.Fill(this.oNLINEDBDataSet.ITEM);
+                
                 DataSet ds = new DataSet();
                 ds.ReadXml("data.xml");
                 DsMappings = new DataSet();
@@ -48,10 +49,14 @@ namespace sossupdate
                 foreach (DataRow dr in DsMappings.Tables[0].Rows)
                 {
                     DataRow[] drs =oNLINEDBDataSet.ITEM.Select("M5ITCD='" + dr["M5ITCD"] + "'");
+                   
                     if (drs.Length != 0)
                     {
                          drs[0]["OptionID"]=dr["OptionID"];
                          //drs[0]["ProductID"]=dr["ProductID"];
+                    }
+                    if (drs.Length > 1) {
+                        Console.WriteLine(dr["M5ITCD"].ToString());
                     }
                     //DataView dv = new DataView(oNLINEDBDataSet.ITEM, "M5ITCD='" + dr["M5ITCD"] + "'", "M5ITCD Desc", DataViewRowState.CurrentRows).;
                 }
@@ -85,7 +90,7 @@ namespace sossupdate
                 if (dr["OptionID"] != DBNull.Value)
                 {
                     //int st = Convert.ToInt16(dr["ProductID"]);
-                    int oid = Convert.ToInt16(dr["OptionID"]==DBNull.Value?0:dr["OptionID"]);
+                    int oid = Convert.ToInt32(dr["OptionID"]==DBNull.Value?0:dr["OptionID"]);
                     //return dt;
                     //prlist.Select
                     var querypritems = from pritems in rpov.ToList()
@@ -234,7 +239,7 @@ namespace sossupdate
                 try
                 {
                     //int st = Convert.ToInt16(dataGridView1["ProductID", e.RowIndex].Value == DBNull.Value ? 0 : dataGridView1["ProductID", e.RowIndex].Value);
-                    int oid = Convert.ToInt16(dataGridView1["OptionID", e.RowIndex].Value == DBNull.Value ? 0 : dataGridView1["OptionID", e.RowIndex].Value);
+                    int oid = Convert.ToInt32(dataGridView1["OptionID", e.RowIndex].Value == DBNull.Value ? 0 : dataGridView1["OptionID", e.RowIndex].Value);
                     //return dt;
                     //prlist.Select
                     var querypritems = from pritems in rpov.ToList()

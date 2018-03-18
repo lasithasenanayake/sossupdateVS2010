@@ -81,5 +81,9 @@
         </xs:element>
       </xs:choice>
     </xs:complexType>
+    <xs:unique name="ITEMKey1">
+      <xs:selector xpath=".//mstns:ITEM" />
+      <xs:field xpath="mstns:M5ITCD" />
+    </xs:unique>
   </xs:element>
 </xs:schema>
