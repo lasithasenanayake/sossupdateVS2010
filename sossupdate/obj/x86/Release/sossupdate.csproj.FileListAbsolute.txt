@@ -13,11 +13,3 @@ D:\Projects\GitHub\sossupdateVS2010\sossupdate\obj\x86\Release\sossupdate.Form1.
 D:\Projects\GitHub\sossupdateVS2010\sossupdate\obj\x86\Release\sossupdate.OpenOnlinestore.resources
 D:\Projects\GitHub\sossupdateVS2010\sossupdate\obj\x86\Release\sossupdate.Properties.Resources.resources
 D:\Projects\GitHub\sossupdateVS2010\sossupdate\obj\x86\Release\sossupdate.csproj.GenerateResource.Cache
-D:\Projects\GitHub\sossupdateVS2010\sossupdate\obj\x86\Release\sossupdate.exe
-D:\Projects\GitHub\sossupdateVS2010\sossupdate\obj\x86\Release\sossupdate.pdb
-D:\Projects\GitHub\sossupdateVS2010\sossupdate\bin\Release\ONLINEDB.mdb
-D:\Projects\GitHub\sossupdateVS2010\sossupdate\bin\Release\sossupdate.exe.config
-D:\Projects\GitHub\sossupdateVS2010\sossupdate\bin\Release\sossupdate.exe
-D:\Projects\GitHub\sossupdateVS2010\sossupdate\bin\Release\sossupdate.pdb
-D:\Projects\GitHub\sossupdateVS2010\sossupdate\bin\Release\sossProcessors.dll
-D:\Projects\GitHub\sossupdateVS2010\sossupdate\bin\Release\sossProcessors.pdb

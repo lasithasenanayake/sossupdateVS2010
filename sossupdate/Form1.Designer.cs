@@ -30,6 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("");
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.OptionID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.responce = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -52,11 +55,19 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnopennilsonlinestore = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.Time = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Code = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Qty = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Status = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iTEMBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.oNLINEDBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -78,7 +89,7 @@
             this.Updated,
             this.LUUPDATEWEB});
             this.dataGridView1.Location = new System.Drawing.Point(3, 122);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(889, 501);
             this.dataGridView1.TabIndex = 0;
@@ -165,7 +176,7 @@
             // 
             this.btnUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnUpdate.Location = new System.Drawing.Point(1045, 646);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(157, 28);
             this.btnUpdate.TabIndex = 1;
@@ -177,7 +188,7 @@
             // 
             this.btnsyncstart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnsyncstart.Location = new System.Drawing.Point(1211, 647);
-            this.btnsyncstart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnsyncstart.Margin = new System.Windows.Forms.Padding(4);
             this.btnsyncstart.Name = "btnsyncstart";
             this.btnsyncstart.Size = new System.Drawing.Size(136, 27);
             this.btnsyncstart.TabIndex = 2;
@@ -190,7 +201,7 @@
             this.btnsyncstop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnsyncstop.Enabled = false;
             this.btnsyncstop.Location = new System.Drawing.Point(1355, 647);
-            this.btnsyncstop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnsyncstop.Margin = new System.Windows.Forms.Padding(4);
             this.btnsyncstop.Name = "btnsyncstop";
             this.btnsyncstop.Size = new System.Drawing.Size(136, 27);
             this.btnsyncstop.TabIndex = 3;
@@ -201,7 +212,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(516, 78);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 28);
             this.button1.TabIndex = 4;
@@ -212,7 +223,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(83, 78);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(424, 22);
             this.textBox1.TabIndex = 5;
@@ -225,7 +236,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Location = new System.Drawing.Point(900, 122);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(589, 500);
             this.dataGridView2.TabIndex = 6;
@@ -247,7 +258,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
             this.pictureBox1.Location = new System.Drawing.Point(1199, 2);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(291, 112);
             this.pictureBox1.TabIndex = 9;
@@ -257,7 +268,7 @@
             // 
             this.btnopennilsonlinestore.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnopennilsonlinestore.Location = new System.Drawing.Point(1313, 593);
-            this.btnopennilsonlinestore.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnopennilsonlinestore.Margin = new System.Windows.Forms.Padding(4);
             this.btnopennilsonlinestore.Name = "btnopennilsonlinestore";
             this.btnopennilsonlinestore.Size = new System.Drawing.Size(177, 28);
             this.btnopennilsonlinestore.TabIndex = 10;
@@ -265,11 +276,73 @@
             this.btnopennilsonlinestore.UseVisualStyleBackColor = true;
             this.btnopennilsonlinestore.Click += new System.EventHandler(this.btnopennilsonlinestore_Click);
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.numericUpDown1.Location = new System.Drawing.Point(900, 650);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(120, 22);
+            this.numericUpDown1.TabIndex = 11;
+            this.numericUpDown1.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            // 
+            // listView1
+            // 
+            this.listView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.Time,
+            this.Code,
+            this.Qty,
+            this.Status});
+            this.listView1.FullRowSelect = true;
+            this.listView1.GridLines = true;
+            this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem1,
+            listViewItem2,
+            listViewItem3});
+            this.listView1.Location = new System.Drawing.Point(3, 122);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(1486, 501);
+            this.listView1.TabIndex = 12;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.Visible = false;
+            // 
+            // Time
+            // 
+            this.Time.Text = "Time";
+            this.Time.Width = 115;
+            // 
+            // Code
+            // 
+            this.Code.Text = "Code";
+            this.Code.Width = 114;
+            // 
+            // Qty
+            // 
+            this.Qty.Text = "Qty";
+            // 
+            // Status
+            // 
+            this.Status.Text = "Status";
+            this.Status.Width = 1053;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1507, 692);
+            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.btnopennilsonlinestore);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
@@ -281,7 +354,7 @@
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.dataGridView1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Shopperz Inventory sync";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -290,6 +363,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.oNLINEDBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -319,6 +393,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Updated;
         private System.Windows.Forms.DataGridViewTextBoxColumn LUUPDATEWEB;
         private System.Windows.Forms.Button btnopennilsonlinestore;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ColumnHeader Time;
+        private System.Windows.Forms.ColumnHeader Code;
+        private System.Windows.Forms.ColumnHeader Qty;
+        private System.Windows.Forms.ColumnHeader Status;
     }
 }
 

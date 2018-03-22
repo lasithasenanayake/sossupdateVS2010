@@ -23,4 +23,3 @@ D:\Projects\GitHub\sossupdateVS2010\sossupdate\obj\x86\Debug\sossupdate.Properti
 D:\Projects\GitHub\sossupdateVS2010\sossupdate\obj\x86\Debug\sossupdate.csproj.GenerateResource.Cache
 D:\Projects\GitHub\sossupdateVS2010\sossupdate\obj\x86\Debug\sossupdate.exe
 D:\Projects\GitHub\sossupdateVS2010\sossupdate\obj\x86\Debug\sossupdate.pdb
-D:\Projects\GitHub\sossupdateVS2010\sossupdate\obj\x86\Debug\sossupdate.csprojResolveAssemblyReference.cache

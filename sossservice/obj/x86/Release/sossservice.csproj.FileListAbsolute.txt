@@ -5,4 +5,4 @@ D:\Projects\GitHub\sossupdateVS2010\sossservice\obj\x86\Release\sossservice.Prop
 D:\Projects\GitHub\sossupdateVS2010\sossservice\obj\x86\Release\sossservice.csproj.GenerateResource.Cache
 D:\Projects\GitHub\sossupdateVS2010\sossservice\obj\x86\Release\sossservice.exe
 D:\Projects\GitHub\sossupdateVS2010\sossservice\obj\x86\Release\sossservice.pdb
-D:\Projects\GitHub\sossupdateVS2010\sossservice\obj\x86\Release\sossservice.csprojResolveAssemblyReference.cache
+D:\Projects\GitHub\sossupdateVS2010\sossservice\obj\x86\Release\sossservice.Form1.resources

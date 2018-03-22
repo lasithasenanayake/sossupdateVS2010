@@ -7,6 +7,7 @@ using System.IO;
 using System.Data;
 using System.Runtime.Serialization.Json;
 
+
 namespace sossProcessors
 {
     public class ShopperzConnector
@@ -43,6 +44,43 @@ namespace sossProcessors
             }
         }
 
+        public string SaveQtyOnline(ProductOptionValueContract[] povs) {
+            try
+            {
+                var httpWebRequest = (HttpWebRequest)WebRequest.Create(URI + "productsUpdate");
+                string res = "";
+                httpWebRequest.ContentType = "application/json";
+                httpWebRequest.Method = "POST";
+
+                using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
+                {
+                    string json = "{\"user\":\"test\"," +
+                                  "\"password\":\"bla\"}";
+                    MemoryStream stream1 = new MemoryStream();
+                    var serializer = new DataContractJsonSerializer(typeof(ProductOptionValueContract[]));
+                    serializer.WriteObject(stream1, povs);
+                    stream1.Position = 0;
+                    StreamReader sr = new StreamReader(stream1);
+                    json = sr.ReadToEnd();
+                    streamWriter.Write(json);
+                    streamWriter.Flush();
+                    streamWriter.Close();
+                }
+
+                var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
+                using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+                {
+                    res = streamReader.ReadToEnd();
+
+                }
+
+                return res;
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
+        }
 
         public DataTable UpdateOnlineData(DataSet DsMappings)
         {
@@ -81,10 +119,33 @@ namespace sossProcessors
 
             }
 
+            
             return dtOnlineData;
         }
 
-        public ProductOptionValueContract[] GetOnlineProduct() {
+        public List<ProductOptionValueContract> UpdateOnlineQty(DataSet DsLocalData)
+        {
+            var res = GET(URI + "products");
+            rpov = FromJSON<ProductOptionValueContract[]>(res);
+            List<ProductOptionValueContract> newpvs = new List<ProductOptionValueContract>();
+
+            foreach (ProductOptionValueContract pv in rpov)
+            {
+                
+                  DataRow[] drs = DsLocalData.Tables[0].Select("OptionID ='" + pv.option_value_id + "'");
+                  if (drs.Length != 0)
+                  {
+                    if (Convert.ToInt32(drs[0]["QTYINHAND"]) != pv.optqty) {
+                        newpvs.Add( new ProductOptionValueContract {model=pv.model,optionname=pv.optionname,option_id=pv.option_id,option_value_id=pv.option_value_id,optqty= Convert.ToInt32(drs[0]["QTYINHAND"]),product_id=pv.product_id,product_option_id=pv.product_option_id,stockqty= Convert.ToInt32(drs[0]["QTYINHAND"]) });
+
+                    }                                       
+                  }
+
+            }
+            return newpvs;
+        }
+
+       public ProductOptionValueContract[] GetOnlineProduct() {
             //var res = GET(URI + "products");
             //ProductOptionValueContract[] rpov = FromJSON<ProductOptionValueContract[]>(res);
 

@@ -38,7 +38,7 @@ namespace sossupdate
         {
             // TODO: This line of code loads data into the 'oNLINEDBDataSet.ITEM' table. You can move, or remove it, as needed.
             //this.iTEMTableAdapter.Fill(this.oNLINEDBDataSet.ITEM);
-            
+            listView1.Items.Clear();
             if (System.IO.File.Exists("data.xml")){
                 this.iTEMTableAdapter.Fill(this.oNLINEDBDataSet.ITEM);
                 
@@ -213,17 +213,56 @@ namespace sossupdate
             }
         }
 
+        private void updateonlineqty() {
+            timer1.Enabled = false;
+            this.iTEMTableAdapter.Fill(this.oNLINEDBDataSet.ITEM);
+            DsMappings = new DataSet();
+            DsMappings.ReadXml("mappings.xml");
+            foreach (DataRow dr in DsMappings.Tables[0].Rows)
+            {
+                DataRow[] drs = oNLINEDBDataSet.ITEM.Select("M5ITCD='" + dr["M5ITCD"] + "'");
+
+                if (drs.Length != 0)
+                {
+                    drs[0]["OptionID"] = dr["OptionID"];
+                    //drs[0]["ProductID"]=dr["ProductID"];
+                }
+                if (drs.Length > 1)
+                {
+                    Console.WriteLine(dr["M5ITCD"].ToString());
+                }
+                //DataView dv = new DataView(oNLINEDBDataSet.ITEM, "M5ITCD='" + dr["M5ITCD"] + "'", "M5ITCD Desc", DataViewRowState.CurrentRows).;
+            }
+            var items = shopperzcon.UpdateOnlineQty(oNLINEDBDataSet);
+            if (items.Count != 0)
+            {
+                string status=shopperzcon.SaveQtyOnline(items.ToArray());
+                foreach (var line in items) {
+                    string[] row={ DateTime.Now.ToString(),line.option_value_id.ToString(),line.optqty.ToString(),status};
+                    listView1.Items.Add(new ListViewItem(row));
+                }
+            }
+            timer1.Enabled = true;
+        }
+
+
+
         private void btnsyncstart_Click(object sender, EventArgs e)
         {
             //timer1.Enabled = true;
+            listView1.Visible = true;
+            timer1.Interval=Convert.ToInt32(TimeSpan.FromMinutes(Convert.ToInt32(numericUpDown1.Value)).TotalMilliseconds);
+            timer1.Enabled = true;
             btnsyncstop.Enabled = true;
             btnsyncstart.Enabled = false;
-            updatedata(oNLINEDBDataSet.ITEM);
+            
         }
 
         private void btnsyncstop_Click(object sender, EventArgs e)
         {
             //timer1.Enabled = false;
+            listView1.Visible = false;
+            timer1.Enabled = false;
             btnsyncstop.Enabled = false;
             btnsyncstart.Enabled = true;
         }
@@ -274,6 +313,11 @@ namespace sossupdate
         {
             OpenOnlinestore oform = new OpenOnlinestore();
             oform.Show();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            updateonlineqty();
         }
     }
 }
