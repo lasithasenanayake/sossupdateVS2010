@@ -215,32 +215,40 @@ namespace sossupdate
 
         private void updateonlineqty() {
             timer1.Enabled = false;
-            this.iTEMTableAdapter.Fill(this.oNLINEDBDataSet.ITEM);
-            DsMappings = new DataSet();
-            DsMappings.ReadXml("mappings.xml");
-            foreach (DataRow dr in DsMappings.Tables[0].Rows)
+            try
             {
-                DataRow[] drs = oNLINEDBDataSet.ITEM.Select("M5ITCD='" + dr["M5ITCD"] + "'");
+                this.iTEMTableAdapter.Fill(this.oNLINEDBDataSet.ITEM);
+                DsMappings = new DataSet();
+                DsMappings.ReadXml("mappings.xml");
+                foreach (DataRow dr in DsMappings.Tables[0].Rows)
+                {
+                    DataRow[] drs = oNLINEDBDataSet.ITEM.Select("M5ITCD='" + dr["M5ITCD"] + "'");
 
-                if (drs.Length != 0)
-                {
-                    drs[0]["OptionID"] = dr["OptionID"];
-                    //drs[0]["ProductID"]=dr["ProductID"];
+                    if (drs.Length != 0)
+                    {
+                        drs[0]["OptionID"] = dr["OptionID"];
+                        //drs[0]["ProductID"]=dr["ProductID"];
+                    }
+                    if (drs.Length > 1)
+                    {
+                        Console.WriteLine(dr["M5ITCD"].ToString());
+                    }
+                    //DataView dv = new DataView(oNLINEDBDataSet.ITEM, "M5ITCD='" + dr["M5ITCD"] + "'", "M5ITCD Desc", DataViewRowState.CurrentRows).;
                 }
-                if (drs.Length > 1)
+                var items = shopperzcon.UpdateOnlineQty(oNLINEDBDataSet);
+                if (items.Count != 0)
                 {
-                    Console.WriteLine(dr["M5ITCD"].ToString());
+                    string status = shopperzcon.SaveQtyOnline(items.ToArray());
+                    foreach (var line in items)
+                    {
+                        string[] row = { DateTime.Now.ToString(), line.model.ToString(), line.optqty.ToString(), status };
+                        listView1.Items.Add(new ListViewItem(row));
+                    }
                 }
-                //DataView dv = new DataView(oNLINEDBDataSet.ITEM, "M5ITCD='" + dr["M5ITCD"] + "'", "M5ITCD Desc", DataViewRowState.CurrentRows).;
-            }
-            var items = shopperzcon.UpdateOnlineQty(oNLINEDBDataSet);
-            if (items.Count != 0)
+            }catch(Exception ex)
             {
-                string status=shopperzcon.SaveQtyOnline(items.ToArray());
-                foreach (var line in items) {
-                    string[] row={ DateTime.Now.ToString(),line.option_value_id.ToString(),line.optqty.ToString(),status};
-                    listView1.Items.Add(new ListViewItem(row));
-                }
+                string[] row = { DateTime.Now.ToString(), "Error", "0", ex.Message };
+                listView1.Items.Add(new ListViewItem(row));
             }
             timer1.Enabled = true;
         }
@@ -318,6 +326,23 @@ namespace sossupdate
         private void timer1_Tick(object sender, EventArgs e)
         {
             updateonlineqty();
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (!btnsyncstart.Enabled)
+            {
+                notifyIcon1.Visible = true;
+                notifyIcon1.Icon = this.Icon;
+                this.Visible = false;
+                e.Cancel = true;
+            }
+        }
+
+        private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            this.Visible = true;
+            notifyIcon1.Visible = false;
         }
     }
 }

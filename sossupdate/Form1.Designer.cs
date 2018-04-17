@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem16 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem17 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem18 = new System.Windows.Forms.ListViewItem("");
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.OptionID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.responce = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -62,6 +62,7 @@
             this.Code = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Qty = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Status = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iTEMBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.oNLINEDBDataSet)).BeginInit();
@@ -174,8 +175,8 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnUpdate.Location = new System.Drawing.Point(1045, 646);
+            this.btnUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnUpdate.Location = new System.Drawing.Point(157, 654);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(157, 28);
@@ -186,8 +187,8 @@
             // 
             // btnsyncstart
             // 
-            this.btnsyncstart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnsyncstart.Location = new System.Drawing.Point(1211, 647);
+            this.btnsyncstart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnsyncstart.Location = new System.Drawing.Point(323, 655);
             this.btnsyncstart.Margin = new System.Windows.Forms.Padding(4);
             this.btnsyncstart.Name = "btnsyncstart";
             this.btnsyncstart.Size = new System.Drawing.Size(136, 27);
@@ -198,9 +199,9 @@
             // 
             // btnsyncstop
             // 
-            this.btnsyncstop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnsyncstop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnsyncstop.Enabled = false;
-            this.btnsyncstop.Location = new System.Drawing.Point(1355, 647);
+            this.btnsyncstop.Location = new System.Drawing.Point(467, 655);
             this.btnsyncstop.Margin = new System.Windows.Forms.Padding(4);
             this.btnsyncstop.Name = "btnsyncstop";
             this.btnsyncstop.Size = new System.Drawing.Size(136, 27);
@@ -282,8 +283,8 @@
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDown1.Location = new System.Drawing.Point(900, 650);
+            this.numericUpDown1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.numericUpDown1.Location = new System.Drawing.Point(12, 658);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(120, 22);
             this.numericUpDown1.TabIndex = 11;
@@ -306,9 +307,9 @@
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1,
-            listViewItem2,
-            listViewItem3});
+            listViewItem16,
+            listViewItem17,
+            listViewItem18});
             this.listView1.Location = new System.Drawing.Point(3, 122);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(1486, 501);
@@ -336,6 +337,12 @@
             this.Status.Text = "Status";
             this.Status.Width = 1053;
             // 
+            // notifyIcon1
+            // 
+            this.notifyIcon1.Text = "Shopperz Inventery Update";
+            this.notifyIcon1.Visible = true;
+            this.notifyIcon1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDoubleClick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -357,6 +364,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Shopperz Inventory sync";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iTEMBindingSource)).EndInit();
@@ -400,6 +408,7 @@
         private System.Windows.Forms.ColumnHeader Code;
         private System.Windows.Forms.ColumnHeader Qty;
         private System.Windows.Forms.ColumnHeader Status;
+        private System.Windows.Forms.NotifyIcon notifyIcon1;
     }
 }
 
