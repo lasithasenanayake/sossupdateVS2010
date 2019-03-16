@@ -505,9 +505,10 @@ namespace sossupdate {
                 base.Columns.Add(this.columnProductID);
                 this.columnOptionID = new global::System.Data.DataColumn("OptionID", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnOptionID);
-                this.Constraints.Add(new global::System.Data.UniqueConstraint("ITEMKey1", new global::System.Data.DataColumn[] {
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnM5ITCD}, false));
                 this.columnM5ITCD.Unique = true;
+                this.columnM5ITCD.DefaultValue = ((string)("ss"));
                 this.columnM5ITCD.MaxLength = 15;
                 this.columnMZIZE.MaxLength = 30;
                 this.columnLUUPDATEWEB.MaxLength = 50;

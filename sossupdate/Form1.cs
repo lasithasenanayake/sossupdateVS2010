@@ -90,7 +90,10 @@ namespace sossupdate
                 if (dr["OptionID"] != DBNull.Value)
                 {
                     //int st = Convert.ToInt16(dr["ProductID"]);
-                    int oid = Convert.ToInt32(dr["OptionID"]==DBNull.Value?0:dr["OptionID"]);
+                    int oid = 0;// dr["OptionID"] == DBNull.Value ? 0 : );
+                    Int32.TryParse((dr["OptionID"] == DBNull.Value ? "0" : dr["OptionID"].ToString()), out oid);
+                    
+                    //int oid = Convert.ToInt32(dr["OptionID"]==DBNull.Value?"0":dr["OptionID"]);
                     //return dt;
                     //prlist.Select
                     var querypritems = from pritems in rpov.ToList()

@@ -46,10 +46,10 @@
   <xs:element name="ONLINEDBDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ONLINEDBDataSet" msprop:Generator_UserDSName="ONLINEDBDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="ITEM" msprop:Generator_TableClassName="ITEMDataTable" msprop:Generator_TableVarName="tableITEM" msprop:Generator_RowChangedName="ITEMRowChanged" msprop:Generator_TablePropName="ITEM" msprop:Generator_RowDeletingName="ITEMRowDeleting" msprop:Generator_RowChangingName="ITEMRowChanging" msprop:Generator_RowEvHandlerName="ITEMRowChangeEventHandler" msprop:Generator_RowDeletedName="ITEMRowDeleted" msprop:Generator_RowClassName="ITEMRow" msprop:Generator_UserTableName="ITEM" msprop:Generator_RowEvArgName="ITEMRowChangeEvent">
+        <xs:element name="ITEM" msprop:Generator_TableClassName="ITEMDataTable" msprop:Generator_TableVarName="tableITEM" msprop:Generator_TablePropName="ITEM" msprop:Generator_RowDeletingName="ITEMRowDeleting" msprop:Generator_RowChangingName="ITEMRowChanging" msprop:Generator_RowEvHandlerName="ITEMRowChangeEventHandler" msprop:Generator_RowDeletedName="ITEMRowDeleted" msprop:Generator_UserTableName="ITEM" msprop:Generator_RowChangedName="ITEMRowChanged" msprop:Generator_RowEvArgName="ITEMRowChangeEvent" msprop:Generator_RowClassName="ITEMRow">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="M5ITCD" msprop:Generator_ColumnVarNameInTable="columnM5ITCD" msprop:Generator_ColumnPropNameInRow="M5ITCD" msprop:Generator_ColumnPropNameInTable="M5ITCDColumn" msprop:Generator_UserColumnName="M5ITCD" minOccurs="0">
+              <xs:element name="M5ITCD" msprop:Generator_ColumnVarNameInTable="columnM5ITCD" msprop:Generator_ColumnPropNameInRow="M5ITCD" msprop:Generator_ColumnPropNameInTable="M5ITCDColumn" msprop:Generator_UserColumnName="M5ITCD" default="ss" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="15" />
@@ -81,7 +81,7 @@
         </xs:element>
       </xs:choice>
     </xs:complexType>
-    <xs:unique name="ITEMKey1">
+    <xs:unique name="Constraint1">
       <xs:selector xpath=".//mstns:ITEM" />
       <xs:field xpath="mstns:M5ITCD" />
     </xs:unique>
